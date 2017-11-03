@@ -1,0 +1,39 @@
+#DirectoryIndex nothing_to_do_here.html
+
+ErrorDocument 404 /?pg=404
+
+RewriteEngine On
+RewriteRule ^page/(.*) index.php?pg=$1 [L]
+RewriteRule ^p/(.*) index.php?p=$1 [L]
+RewriteRule ^skip/(.*)/tag/(.*) index.php?skip=$1&t=$2 [L]
+RewriteRule ^skip/(.*)/list index.php?skip=$1&list [L]
+RewriteRule ^skip/(.*) index.php?skip=$1 [L]
+RewriteRule ^tag/(.*) index.php?t=$1 [L] 
+RewriteRule ^list index.php?list [L]
+
+RewriteCond %{HTTP_HOST} ^www\.poohitan\.com$ [NC]
+RewriteRule ^(.*)$ http://poohitan.com/$1 [R=301,L]
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^homer(.*)$ staff/homer$1
+RewriteRule ^cake(.*)$ staff/cake$1
+RewriteRule ^comic-saaaaaaanns!!(.*)$ staff/comic-saaaaaaanns!!$1
+RewriteRule ^google(.*)$ staff/google$1
+RewriteRule ^lpml(.*)$ staff/lpml$1
+RewriteRule ^prehistorik2(.*)$ staff/prehistorik2$1
+RewriteRule ^rainbow-sheep(.*)$ staff/rainbow-sheep$1
+RewriteRule ^tortynka(.*)$ staff/tortynka$1
+RewriteRule ^thanks(.*)$ staff/thanks$1
+RewriteRule ^webtech(.*)$ staff/webtech$1
+RewriteRule ^wish(.*)$ staff/wish$1
+RewriteRule ^thats-a-paddlin(.*)$ staff/thats-a-paddlin$1
+
+RewriteRule ^about$ index.php?pg=About
+RewriteRule ^about/$ index.php?pg=About
+RewriteRule ^archive$ index.php?list
+RewriteRule ^archive/$ index.php?list
+
+#RewriteEngine on
+#RewriteBase /
+#RewriteRule ^foo\.html$ bar.html

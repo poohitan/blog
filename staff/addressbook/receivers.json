@@ -1,0 +1,98 @@
+[
+    { 
+        "name": "Марічка",
+        "surname": "Платко",
+        "street": "вул. Пулюя", 
+        "house": 5,
+        "appartment": 33,
+        "city": "Львів",
+        "region": "",
+        "country": "Україна",
+        "zipcode": 79060,
+        "tags" : [
+            "Алі",
+            "Порічка"
+        ]
+    },
+    { 
+        "name": "Вася",
+        "surname": "Пеньга",
+        "street": "вул. Гашека", 
+        "house": 22,
+        "appartment": 1,
+        "city": "Львів",
+        "region": "",
+        "country": "Україна",
+        "zipcode": 79031,
+        "tags" : [
+            "Ворон",
+            "Кажан"
+        ]
+    },
+    { 
+        "name": "Володя",
+        "surname": "Ліщинський",
+        "street": "вул. В. Великого", 
+        "house": 34,
+        "appartment": 108,
+        "city": "Львів",
+        "region": "",
+        "country": "Україна",
+        "zipcode": 79053,
+        "tags" : [
+            "Рудий",
+            "Вогняний"
+        ]
+    },
+    { 
+        "name": "Андрій",
+        "surname": "Яцишинець",
+        "street": "вул. В. Великого", 
+        "house": 48,
+        "appartment": 18,
+        "city": "Львів",
+        "region": "",
+        "country": "Україна",
+        "zipcode": 79053,
+        "tags" : [
+            "Жовтий",
+            "Лапа"
+        ]
+    },
+    { 
+        "name": "Наста",
+        "surname": "Карнацкая",
+        "street": "пр. Ракасоўскага", 
+        "house": 114,
+        "appartment": 308,
+        "city": "Мінск",
+        "region": "",
+        "country": "Беларусь",
+        "zipcode": 220101,
+        "tags" : []
+    },
+    { 
+        "name": "Настя",
+        "surname": "Олексюк",
+        "street": "вул. Буковинська", 
+        "house": 5,
+        "appartment": 92,
+        "city": "Рівне",
+        "region": "",
+        "country": "Україна",
+        "zipcode": 33027,
+        "tags" : []
+    },
+    { 
+        "name": "Ілья",
+        "surname": "Цімохін",
+        "street": "вул. Макаёнка", 
+        "house": "23-1",
+        "appartment": 10,
+        "city": "Гомель",
+        "region": "",
+        "country": "Беларусь",
+        "zipcode": 246038,
+        "tags" : []
+    }
+]

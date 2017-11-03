@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext,latin);
+
+body {
+    background: #333;
+    font-family: 'PT Sans', 'Trebuchet MS', Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#wrapper {
+    background: #fff;   
+    .inner-padding(50px, 50px);
+    margin: 40px auto;
+    min-width: 600px;
+    width: 70%;
+}
+
+#header {
+    padding: 40px 0;
+    margin-top: -40px;
+}
+
+#logo {
+    background-image: url("logo_without_bg_small.png");
+    display: block;
+    height: 68px;
+    font-size: 0px;
+    margin: 0 auto;
+    width: 400px;
+}
+
+.datatable {
+    width: 100%;
+    
+    th {
+        background: #999;
+        color: #fff;
+        font-size: 1.1em;
+        font-weight: normal;
+        text-align: left;
+        
+        &.date {
+            width: 80px;
+        }
+    }
+    
+    th {
+        padding: 7px 15px;
+    }
+    
+    tr {
+        position: relative;
+        
+        &.even {
+            background-color: #f0f0f0;
+        }
+        
+        &.odd {
+            background-color: #fff;
+        }
+        
+        a {
+            color: #333;
+            display: block;
+            height: 100%;
+            padding: 7px 15px;
+            text-decoration: none;
+            width: 100%;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        
+        &.highlighted {
+            background-color: #e64f30;
+            color: #fff;
+            transition: all 200ms linear;
+            
+            a {   
+                color: #fff;
+                transition: all 0ms linear;
+            }
+        }
+    }
+}
+
+
+///////////////// Mixins /////////////////
+
+.inner-padding(@vertical, @horizontal) {
+    padding: @vertical @horizontal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.inner-padding-full(@top, @right, @bottom, @left) {
+    padding: @top @right @bottom @left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.box-sizing(@sizing) {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: @sizing;
+    box-sizing: @sizing;
+}
+
+.rounded (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.opacity(@opacity) {
+    opacity: @opacity;
+    @opacity-ie: (@opacity * 100);
+    filter: ~"alpha(opacity=@{opacity-ie})";
+}
+
+.animation(@animation) {
+    -webkit-animation: @animation;
+    -moz-animation: @animation;
+    -ms-animation: @animation;
+    -o-animation: @animation;
+    animation: @animation;
+}
+
+.transition(@transition) {
+    -webkit-transition: @transition;
+    -moz-transition:@transition;
+    -ms-transition: @transition;
+    -o-transition: @transition;
+    transition: @transition;
+}
+
+.translate(@x, @y) {
+    -webkit-transform: translate(@x, @y);
+    -ms-transform: translate(@x, @y);
+    -o-transform: translate(@x, @y);
+    transform: translate(@x, @y);
+}
+
+.img-responsive(@display: block) {
+    display: @display;
+    max-width: 100%;
+    height: auto;
+}
+
+.radial-gradient(@inner-color: #555; @outer-color: #333) {
+    background-image: -webkit-radial-gradient(circle, @inner-color, @outer-color);
+    background-image: radial-gradient(circle, @inner-color, @outer-color);
+    background-repeat: no-repeat;
+}
+
+.clearfix {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+        &:after {
+        clear: both;
+    }
+}

@@ -1,0 +1,156 @@
+/* ЗАГАЛЬНІ СТИЛІ */
+body {
+	padding:0; 
+	margin:0;
+	text-align:center;
+	font-family:'PT Sans', Helvetica, Sans-serif;
+	color:#000;
+	font-size:14px;
+}
+a {
+	color:#067acf;
+	text-decoration:underline;
+	outline:none;
+}
+a:hover {color:#31a1e0;}
+/*a:visited {color:#0865b3;}*/
+h1 {color:#067acf; font-size:25px;  font-weight:normal;}
+h2 {color:#067acf; font-size:18px; font-weight:normal;}
+hr {border-bottom:1px solid #b5b5b5; border-top:none; border-right:none; border-left:none; width:175px; margin-left:-20px;}
+input {
+	border:1px solid #e4e4e4; 
+	color:#b5b5b5; font-family:'PT Sans', Helvetica, Sans-serif; 
+	font-size:14px;
+	background-color:#fff; 
+	padding:2px; 
+	margin-bottom:-5px;
+}
+input:focus {border-color:#b5b5b5; color:#3e3e3e;}
+input.button {color:#3e3e3e; width:auto; padding:2px 15px;}
+input.button:hover {border-color:#b5b5b5;}
+textarea {
+	border:1px solid #e4e4e4; 
+	color:#b5b5b5; font-family:'PT Sans', Helvetica, Sans-serif; 
+	font-size:14px;
+	background-color:#fff; 
+	padding:2px; 
+	margin-bottom:-5px;
+}
+textarea:focus {border-color:#b5b5b5; color:#3e3e3e;}
+select {
+	border:1px solid #e4e4e4; 
+	color:#b5b5b5; font-family:'PT Sans', Helvetica, Sans-serif; 
+	font-size:14px;
+	background-color:#fff; 
+	padding:2px; 
+	margin-bottom:-5px;
+	outline:none;
+}
+select:focus {border-color:#b5b5b5; color:#3e3e3e;}
+/*********************************************/
+
+
+/* ОСНОВНИЙ БЛОК */
+#wrapper {
+	width:1000px;
+	background:url(bg.png);
+}
+/*********************************************/
+
+
+/* ШАПКА */
+#header {
+	background-image:url(header.png);
+	background-position:center;
+	overflow:hidden;
+	width:1000px;
+	height:176px;
+}
+/*********************************************/
+
+
+/* КОНТЕНТ (блок містить три колонки) */
+#content {
+	text-align:left;
+}
+/*********************************************/
+
+
+/* ЛІВА КОЛОНКА */
+.leftcol {
+	width:135px;
+	float:left;
+	padding:0px 20px 20px 20px;
+	color:#252525;
+	font-size:16px;
+	border-left:1px solid #b5b5b5;
+	border-right:1px solid #b5b5b5;
+}
+.leftcol input {width:135px;}
+/* меню */
+#menu {font-size:16px;}
+#menu ul {list-style:none; margin:0; padding:0;}
+#menu li {height:25px; padding-top:3px; cursor:hand; cursor:pointer; padding-left: 20px; margin:0px -20px 0px -20px;}
+#menu li:hover {background-color:#e0e0e0; padding-left: 20px; margin:0px -20px 0px -20px;}
+#menu li.dropdown {background-image:url(list-icon-padding.png); background-position:right; background-repeat:no-repeat;} /* іконка трикутника біля пунктів з випадаючим меню */
+#menu li.dropdown:hover {background-image:url(list-icon-padding.png);}
+#menu ul li {position: relative;}
+#menu li ul {position: absolute; left: 175px; top: -1px; display: none; background:#f3f3f3; border:1px solid #b5b5b5; padding:0px 20px; width:100%;}
+#menu li:hover ul {display: block;}
+#menu a {color:#252525; font-size:16px; text-decoration:none;} /* */
+/* вхід на сайт */
+#login {}
+#login .user {background-image: url('user-icon.png'); background-repeat:no-repeat; background-position:3px 3px; padding-left:21px; width:116px;}
+#login .pass {background-image: url('pass-icon.png'); background-repeat:no-repeat; background-position:3px 3px; padding-left:21px; width:116px;}
+/*********************************************/
+
+
+/* ПРАВА КОЛОНКА */
+.rightcol {
+	width:135px;
+	float:right;
+	padding:0px 20px 20px 20px;
+	border-right:1px solid #b5b5b5;
+	border-left:1px solid #b5b5b5;
+}
+/* останні новини */
+#news {font-size:12px;}
+#news a {text-decoration:none; color:#000;}
+#news .date {color:#b5b5b5; text-align:right;}
+/* пошук */
+#search {}
+input.search {background-image: url('search-icon.png'); background-repeat:no-repeat; background-position:3px 3px; padding-left:21px; width:116px;}
+/*********************************************/
+
+
+/* ЦЕНТРАЛЬНА КОЛОНКА */
+.center {
+	width:596px;
+	float:left;
+	padding:0px 25px 0px 25px;
+	/*outline:1px dashed #FF0000;*/
+}
+.superdate {color:#b5b5b5; text-align:right;}
+/*********************************************/
+
+
+/* ПІДВАЛ */
+#footer {
+	background-image:url(footer.png);
+	background-position:center;
+	overflow:hidden;
+	width:960px;
+	height:60px;
+	clear:both; /* страховка, зараз нічого не робить, але і не заважає */
+	color:#f5f5f5;
+	text-align:right;
+	padding:30px 20px 20px 20px;
+}
+.copyright {font-size:11px !important; color:#b5b5b5}
+/*********************************************/
+
+.avatar {
+	width:100px; 
+	height:100px;
+	overflow:hidden;
+}

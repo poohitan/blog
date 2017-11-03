@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Гомер ховається</title>
+<style>
+	#homerTop {position: absolute; left:-500px; top:-500px;}
+	#homerLeft {position: absolute; left:-500px; top:-500px;}
+	#homerRight {position: absolute; right:-500px; top:-500px;}
+	#homerBottom {position: absolute; left:-500px; bottom:-500px;}
+	body {overflow:hidden;}
+</style>
+<script type="text/javascript">
+function screenSize() {
+      var w, h;
+      w = (window.innerWidth ? window.innerWidth : (document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.offsetWidth));
+      h = (window.innerHeight ? window.innerHeight : (document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.offsetHeight));
+      return {w:w, h:h};
+}
+function myrandom(from,to){
+    return Math.floor(Math.random()*(to-from+1)+from);
+}
+var i = 0;
+var homersTop = []
+var homersRight = []
+var homersBottom = []
+var homersLeft = []
+
+function initializeTop() {
+	d = document.createElement('div');
+	var width = screenSize().w;
+	var left = myrandom(-10,width-10);
+	var top = myrandom(57,63);
+//	homersTop[i].style.top = '-' + top + 'px';
+//	homersTop[i].style.left = left + 'px';
+	document.body.appendChild(d);
+	homersTop[i].innerHTML = "<img id='homerTop' src='homerTop.png' border='0'/>";
+//	setTimeout(initialize, 10);
+}
+function initializeLeft() {
+	var homerLeft;
+	homerLeft = document.getElementById('homerLeft');
+	var height = screenSize().h;
+	var top = myrandom(-10,height-10);
+	var left = myrandom(57,61);
+	homerLeft.style.top = top + 'px';
+	homerLeft.style.left = '-' + left + 'px';
+	setTimeout(initialize, 10);
+}
+function initializeRight() {
+	var homerRight;
+	homerRight = document.getElementById('homerRight');
+	var height = screenSize().h;
+	var width = screenSize().w;
+	var top = myrandom(-10,height-10);
+	var right = myrandom(57,61);
+	homerRight.style.top = top + 'px';
+	homerRight.style.right = '-' + right + 'px';
+	setTimeout(initialize, 10);
+}
+function initializeBottom() {
+	var homerBottom;
+	homerBottom = document.getElementById('homerBottom');
+	var width = screenSize().w;
+	var left = myrandom(-10,width-10);
+	var bottom = myrandom(57,63);
+	homerBottom.style.bottom = '-' + bottom + 'px';
+	homerBottom.style.left = left + 'px';
+	setTimeout(initialize, 10);
+}
+function initialize() {
+	var side;
+	side = Math.floor(Math.random()*4)+1;
+	switch (side) {
+		case 1: initializeTop(); 
+		break;
+		case 2: initializeLeft(); 
+		break;
+		case 3: initializeRight()
+		break;
+		case 4: initializeBottom(); 
+		break;
+		default: initializeTop();
+	}
+	i = i + 1;
+}
+</script>
+</head>
+<body onLoad="initializeTop();">
+<img id="homerTop" src="homerTop.png" border="0"/>
+<img id="homerLeft" src="homerLeft.png" border="0"/>
+<img id="homerRight" src="homerRight.png" border="0"/>
+<img id="homerBottom" src="homerBottom.png" border="0"/>
+</body>
+</html>

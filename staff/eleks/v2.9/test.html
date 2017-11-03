@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test page</title>
+        <meta charset="utf-8">
+        <script src="scripts/socket.js"></script>
+    </head>
+    <body>
+        See console.
+    </body>
+</html>
+
+<script>
+    var socket = io.connect("http://chaty.st.lviv.ua:5000");
+
+    socket.on("connect", function() {
+        console.log("connected to socket");
+    });
+</script>

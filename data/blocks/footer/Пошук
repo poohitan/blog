@@ -1,0 +1,5 @@
+<div id="search">
+<form method="post" action="<?php e($_s['base_url']);?>/index.php" id="search">
+<input type="text" name="scword" value="пошук" onfocus="if(this.value=='пошук')this.value=''" onblur="if(this.value=='')this.value='пошук'" class="input" />
+</form>
+</div>

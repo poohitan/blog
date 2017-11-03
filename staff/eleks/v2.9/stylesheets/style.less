@@ -1,0 +1,888 @@
+@bloody-red: #ff0000;
+@raspberry: #cc0033;
+@orange: #ffcc33;
+@sky-blue: #6699ff;
+@soft-green: #00cc33;
+@lime: #ccff00;
+@dark-grey: #484848;
+@grey: #aaa;
+@light-grey: #dedede;
+
+@main-color: @sky-blue;
+@main-color-darker: darken(@main-color, 20%);
+@main-color-lighter: lighten(@main-color, 20%);
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700,300italic&subset=latin,cyrillic);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: @main-color;
+    font-family: 'Open Sans', Verdana, helvetica, sans-serif;
+    font-size: 14px;
+    
+    &.easter {
+        cursor: url(../images/cursor.png), auto;
+    }
+}
+
+img {
+    .img-responsive;
+}
+
+input[type="text"] {
+    border: 1px solid @light-grey;
+    color: @dark-grey;
+    height: 30px;
+    padding: 0 10px;
+    margin: 0;
+    .transition(all 150ms linear);
+    width: 130px;
+    
+    &:focus {
+        border: 1px solid @main-color-darker;
+        color: darken(@dark-grey, 20%);
+    }
+}
+
+input[type="radio"] {
+    display: none;
+    
+    &+label {
+        background: url("../images/sprite-kraked.png") 0 0 no-repeat;
+        cursor: pointer;
+        overflow: hidden;
+        padding: 0 5px 0 22px;
+        width: 20px;
+    }
+    
+    &:checked + label {
+        background-position: 0 -20px;
+    }
+}
+
+input[type="submit"] {
+    background-color: @main-color-darker;
+    border: 0 none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-family: 'Open Sans', Verdana, helvetica, sans-serif;
+    padding: 7px 10px;
+    .transition(all 120ms linear);
+    
+    &:hover {
+        background-color: @main-color;
+    }
+}
+
+input[type="button"] {
+    background-color: #fff;
+    border: 1px solid @main-color;
+    color: @main-color;
+    cursor: pointer;
+    font-size: .9em;
+    font-family: 'Open Sans', Verdana, helvetica, sans-serif;
+    padding: 5px 10px;
+    .transition(all 120ms linear);
+    
+    &:hover {
+        background-color: @main-color;
+        color: #fff;
+    }
+}
+
+input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+	cursor: pointer;
+	.opacity(0);
+    height: 100%;
+    width: 100%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#background-image-holder {
+    background: url("../images/bg-pattern-kraked.jpg");
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#background-color-holder {
+    background-color: @main-color;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    .opacity(0.8);
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#gradient-holder {
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    .animation(opacity-animation 1200ms 1);
+    .radial-gradient(rgba(255,255,255,0), @main-color);
+}
+
+#outer-wrapper {
+    display: table;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#inner-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+///////////////// Login form styles /////////////////
+#login-form {    
+    .animation(opacity-animation 500ms 1);
+    background: #fff;
+    .inner-padding(30px, 30px);
+    height: auto;
+    max-height: 500px;
+    position: relative;
+    margin: 0 auto;
+    .transition(all 150ms linear);
+    width: 300px;
+    
+    .logo {
+        .animation(show-logo 1s 1);
+        background: #fff;
+        position: absolute;
+        padding: 20px;
+        right: -25px;
+        .rounded(40px);
+        top: -40px;
+        width: 40px;
+    }
+    
+    .line {
+        padding: 10px;
+        overflow: hidden;
+    }
+    
+    .login-button {
+        text-align: center;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    .label {
+        width: 60px;
+        display: inline-block;
+    }
+    
+    .avatar {
+        border: 1px solid @main-color;
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        overflow: hidden;
+        text-align: center;
+    
+        img {
+            height: 100%;
+            display: inline;
+        }
+    }
+    
+    .file-upload {
+        background-color: #fff;
+        border: 1px solid @main-color;
+        color: @dark-grey;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 1.1em;
+        font-family: 'Open Sans', Verdana, helvetica, sans-serif;
+        .inner-padding(7px, 10px);
+        margin-left: 10px;
+        overflow: hidden;   
+        position: relative;
+        .transition(all 150ms linear);
+        vertical-align: super;
+
+        &:hover {
+            background-color: @main-color;
+            color: #fff;
+        }
+    }
+    
+    .filename {
+        color: @dark-grey;
+        display: inline-block;
+        font-size: 0.8em;
+        text-align: left;
+        vertical-align: top;
+    }
+    
+    .tip {
+        color: @bloody-red;
+        font-size: .8em;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .bad-input {
+        border-color: @bloody-red !important; 
+    }
+}
+
+///////////////// Loading window /////////////////
+
+@progress-wrapper-height : 230;
+#progress-wrapper {
+    background: #fff;
+    .inner-padding(10px, 40px);
+    height: unit(@progress-wrapper-height, px);
+    display: none;
+    width: 400px;
+    left: 50%;
+    margin: unit(-1 * @progress-wrapper-height / 2, px) -200px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    overflow: hidden;
+    
+    .line {
+        padding: 10px 0;
+    }
+}
+
+.preloader {
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    
+    img {
+        display: inline;
+    }
+}
+
+.progress-bar {
+    height: 20px;
+    border: 1px solid @main-color-lighter;
+    background-color: #fff;
+    overflow: hidden;
+
+    .progress {
+        background-color: @main-color;
+        height: 100%;
+        width: 0;
+    }
+}
+
+///////////////// Chat styles /////////////////
+
+#wrapper {
+    background: #fff;
+    bottom: 20px;
+    display: none;
+    .inner-padding(30px, 30px);
+    left: 10%;
+    margin: 20px auto;
+    min-height: 450px;
+    position: absolute;
+    top: 20px;
+  //  overflow: hidden;
+    width: 80%;
+    
+    .container {
+        border: 1px solid @main-color-lighter;  
+        .inner-padding(10px, 10px);
+        vertical-align: top;
+    }
+
+    .box {
+        float: left;
+        vertical-align: top;        
+    }
+}
+
+#logo {
+    cursor: pointer;
+    float: left;
+    margin-bottom: 20px;
+    width: 40px;
+}
+    
+#logout {
+  //  color: #fff;
+//    background-color: @main-color;
+ //   border: 1px solid @main-color;
+    float: right;
+    font-size: .9em;
+}
+
+#chat {
+    .inner-padding-full(0, 10px, 10px, 0);
+    font-size: .9em;
+    width: 70%;
+    
+    .container {
+        height: 300px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+        
+    .message {
+        padding-bottom: 10px;
+    }
+    
+    .notification {
+        color: @grey;
+        padding-bottom: 10px;
+    }
+        
+    .message-details {
+         padding-bottom: 3px;
+    }
+        
+    .sender {
+        color: @main-color;
+        cursor: pointer;
+        font-weight: bold;
+        .transition(all 100ms linear);
+        
+        &.self {
+            color: @grey;
+            cursor: default;
+            
+            &:hover {
+                color: @grey;
+            }
+        }
+        
+        &.blocked {
+            display: none;
+        }
+            
+        &:hover {
+            color: @main-color-darker;
+        }
+    }
+
+    .datetime {
+        color: @grey;
+        float: right;
+    }
+}
+    
+#users-online {
+  //  .inner-padding-full(0, 0, 10px, 10px);
+    float: right;
+    margin: 0 -10px 10px 10px;
+    width: 30%;
+}
+    
+#messagebox-userinfo {
+    bottom: 30px;
+    .inner-padding-full(0, 50px, 0, 0);
+    position: absolute;
+  //  overflow: hidden;
+    width: 70%;
+    
+    .container {
+        border: none;
+        .inner-padding-full(0, 0, 0, 0);
+    //    overflow: hidden;
+    }
+        
+    #buttons {
+        float: right;
+        overflow: hidden;
+        width: 60px;
+    }
+        
+    #send-button {
+     //   .inner-padding-full(0, 0, 10px, 0);
+        .box-sizing(border-box);
+        margin-bottom: 8px;
+        width: 60px;
+        
+        #send-message {
+            height: 100%;
+            width: 100%;
+        }
+    }
+        
+    #smiles-button {
+   //     .inner-padding-full(0, 0, 0, 0);
+        .box-sizing(border-box);
+        overflow: hidden;
+        width: 60px;
+        
+        #choose-smile {
+            background: url("../images/sprite-kraked.png") 13px -48px no-repeat;
+            height: 34px;
+            width: 100%;
+            
+            &:hover {  
+                background: url("../images/sprite-kraked.png") 13px -88px no-repeat;
+                background-color: @main-color;
+            }
+        }
+    }
+}
+
+#userinfo {   
+   .box-sizing(border-box);
+    float: left;
+    font-size: .8em;
+    text-align: center;
+    overflow: hidden;
+    width: 60px;
+
+    .avatar {
+        border: 1px solid @main-color;
+        .box-sizing(border-box);
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        overflow: hidden;
+        text-align: center;
+
+        img {
+            height: 100%;
+            display: inline;
+        }
+    }
+            
+    .username {
+        word-wrap: break-word;
+    }
+}
+    
+#messagebox {
+    .inner-padding(0,10px);
+    height: 100px;
+    float: left;
+            
+    #messagebox-text {
+        border: 1px solid @main-color-lighter;
+        .box-sizing(border-box);
+        padding: 10px;
+        height: 100%;
+        .transition(all 100ms linear);
+        resize: none;
+        width: 100%;
+        
+        &:focus {
+            border: 1px solid @main-color;
+        }
+    }
+}
+
+#smiles {
+    background-color: lighten(@main-color, 25%);
+    border: 1px solid @main-color;
+    bottom: 0;
+    display: none;
+    .inner-padding(10px, 10px);
+    position: absolute;
+    right: 120px;
+    width: 200px;
+    z-index: 999;
+}
+    
+#black-list {
+ //   .inner-padding-full(10px, 0, 0, 10px);
+    margin: 10px -10px 0 10px;
+    float: right;
+    width: 30%;
+}
+    
+#users-online,
+#black-list {
+    .header {
+        margin-bottom: 10px;
+    }
+        
+    .title {
+        line-height: 16px;
+    }
+        
+    .button-view-mode {
+         cursor: pointer;
+         .transition(opacity 100ms linear);
+         float: right;
+         height: 16px;
+         .opacity(0.6);
+         width: 16px;
+         
+         &:hover {
+             .opacity(1);
+         }
+            
+         &.list {
+             background: url("../images/sprite-kraked.png") -50px -50px no-repeat;
+         }
+        
+         &.tile {
+             background: url("../images/sprite-kraked.png") -75px -50px no-repeat;
+         }
+     }
+        
+    .users-container {
+         overflow-x: hidden;
+         overflow-y: auto;
+    }
+    
+    .user {
+        .box-sizing(border-box);
+         cursor: pointer;
+         .transition(all 100ms linear);
+         overflow: hidden;
+        
+        &.dragging {
+            .opacity(0.4);
+        }
+            
+        .avatar {
+             background: #fff;
+             border: 1px solid @main-color;
+             .box-sizing(border-box);
+             overflow: hidden;
+             text-align: center;
+            .transition(all 100ms linear);
+
+             img {
+                 height: 100%;
+                 display: inline;
+             }
+        }
+            
+        .username {
+            word-wrap: break-word;
+        }
+    }
+        
+    .list {
+        .user {
+            padding: 5px;
+            
+            .avatar {
+                display: inline-block;
+                height: 30px;
+                vertical-align: top;
+                width: 30px;
+            }
+                
+            .username {
+                display: inline-block;
+                height: 30px;
+                line-height: 30px;
+                padding-left: 5px;
+                vertical-align: top;
+            }
+            
+            &:hover {
+                background-color: @main-color-lighter;
+            }
+        }
+    }
+        
+    .tile {
+        .user {
+            display: inline-block;
+            margin: 3px 3px -2px 3px;
+            outline: 0px solid @main-color;
+            position: relative;
+            width: 60px;
+                
+            .avatar {
+                height: 60px;
+                width: 60px;   
+            }
+            
+            .username {
+                background-color: @main-color;
+                color: #fff;
+                font-size: .8em;
+                height: 60px;
+                line-height: 60px;
+                position: absolute;
+                .opacity(0);
+                overflow: hidden;
+                text-align: center;
+                top: 0;
+                .transition(all 100ms linear);
+                width: 60px; 
+                word-wrap: break-word;
+                vertical-align: middle;
+                
+                &:hover {
+                    .opacity(1);
+                }
+            }
+            
+            &:hover {
+                outline: 3px solid @main-color;
+            }
+        }
+    }
+    
+    &.drop-hover {
+        background-color: lighten(@main-color, 25%);
+    }
+}
+
+.user-drag-helper {
+    border: 1px solid @main-color;
+    .box-sizing(border-box);
+    cursor: pointer;
+    background-color: #fff;
+    padding: 5px 5px 0 5px;
+    position: absolute;
+    overflow: hidden;
+            
+    .avatar {
+        background: #fff;
+        border: 1px solid @main-color;
+        .box-sizing(border-box);
+        display: inline-block;
+        overflow: hidden;
+        text-align: center;
+        height: 45px;
+        width: 45px;
+
+        img {
+             height: 100%;
+             display: inline;
+         }
+    }
+            
+    .username {
+        word-wrap: break-word;
+        display: inline-block;
+        height: 45px;
+        line-height: 45px;
+        padding-left: 5px;
+        vertical-align: top;
+    }
+}
+
+///////////////// Mixins /////////////////
+
+.inner-padding(@vertical, @horizontal) {
+    padding: @vertical @horizontal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.inner-padding-full(@top, @right, @bottom, @left) {
+    padding: @top @right @bottom @left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.box-sizing(@sizing) {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: @sizing;
+    box-sizing: @sizing;
+}
+
+.rounded (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.opacity(@opacity) {
+    opacity: @opacity;
+    @opacity-ie: (@opacity * 100);
+    filter: ~"alpha(opacity=@{opacity-ie})";
+}
+
+.animation(@animation) {
+    -webkit-animation: @animation;
+    -moz-animation: @animation;
+    -ms-animation: @animation;
+    -o-animation: @animation;
+    animation: @animation;
+}
+
+.transition(@transition) {
+    -webkit-transition: @transition;
+    -moz-transition:@transition;
+    -ms-transition: @transition;
+    -o-transition: @transition;
+    transition: @transition;
+}
+
+.translate(@x, @y) {
+    -webkit-transform: translate(@x, @y);
+    -ms-transform: translate(@x, @y);
+    -o-transform: translate(@x, @y);
+    transform: translate(@x, @y);
+}
+
+.img-responsive(@display: block) {
+    display: @display;
+    max-width: 100%;
+    height: auto;
+}
+
+.radial-gradient(@inner-color: #555; @outer-color: #333) {
+    background-image: -webkit-radial-gradient(circle, @inner-color, @outer-color);
+    background-image: radial-gradient(circle, @inner-color, @outer-color);
+    background-repeat: no-repeat;
+}
+
+.clearfix {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+        &:after {
+        clear: both;
+    }
+}
+
+///////////////// Animations /////////////////
+
+@-moz-keyframes show-logo {
+    0% {
+        .translate(-50px, 50px);
+        .opacity(0);
+    }
+    100% {
+        .translate(0, 0);
+        .opacity(1);
+    }
+}
+@-webkit-keyframes show-logo {
+    0% {
+        .translate(-50px, 50px);
+        .opacity(0);
+    }
+    100% {
+        .translate(0, 0);
+        .opacity(1);
+    }
+}
+@keyframes show-logo {
+    0% {
+        .translate(-50px, 50px);
+        .opacity(0);
+    }
+    100% {
+        .translate(0, 0);
+        .opacity(1);
+    }
+}
+
+@-moz-keyframes opacity-animation {
+    0% {
+        .opacity(0);
+    }
+    100% {
+        .opacity(1);
+    }
+}
+@-webkit-keyframes opacity-animation {
+    0% {
+        .opacity(0);
+    }
+    100% {
+        .translate(0, 0);
+        .opacity(1);
+    }
+}
+@keyframes opacity-animation {
+    0% {
+        .opacity(0);
+    }
+    100% {
+        .opacity(1);
+    }
+}
+
+@media (max-width: 640px) {
+    #wrapper {
+        .inner-padding(20px, 20px);
+        position: relative;
+        margin: 0 auto;
+        width: 90%;
+        left: auto;
+        top: 20px;
+        
+        .box {
+         //   .inner-padding(10px, 10px);
+         //   float: none;
+        }
+    }
+
+    #chat {
+        .inner-padding(5px, 5px);
+       // margin: 0 0 10px 0;
+        width: 100%;
+        
+        .container {
+            height: 200px;
+        }
+    }
+    
+    #messagebox-userinfo {
+       // display: none;
+        position: static;
+        .inner-padding(5px, 5px);
+        margin: 0;
+        width: 100%;
+    }
+    
+    #users-online,
+    #black-list {
+        float: left;
+        margin: 0;
+        width: 50%;
+        
+        .container {
+            height: 180px;
+        }
+        
+        .users-container {
+            height: 130px;
+        }
+    }
+    
+    #users-online {
+        .inner-padding(5px, 5px);
+    }
+    
+    #black-list {
+        .inner-padding(5px, 5px);
+    }
+}

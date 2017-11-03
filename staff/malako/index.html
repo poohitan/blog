@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Test</title>
+<script type="text/javascript">
+currentImg = new Image();
+function run() {
+	turning = true;
+}
+function stop() {
+	turning = false;
+}
+function turnLeft() {
+	if (turning == true) {
+		if (document.malako.src == "0.png") {
+			document.malako.src = "-1.png";
+			window.setTimeout(turnLeft,100);
+		}
+		if (document.malako.src == "1.png") {
+			document.malako.src = "0.png";
+			window.setTimeout(turnLeft,100);
+		}
+		if (document.malako.src == "2.png") {
+			document.malako.src = "1.png";
+			window.setTimeout(turnLeft,100);
+		}
+		if (document.malako.src == "3.png") {
+			document.malako.src = "2.png";
+			window.setTimeout(turnLeft,100);
+		}
+		if (document.malako.src == "4.png") {
+			document.malako.src = "3.png";
+			window.setTimeout(turnLeft,100);
+		}
+		if (document.malako.src == "5.png") {
+			document.malako.src = "4.png";
+			window.setTimeout(turnLeft,100);
+		}
+	}
+}
+function turnRight() {
+	if (turning == true) {
+		if (document.malako.src == "4.png") {
+			document.malako.src = "5.png";
+			window.setTimeout(turnRight,100);
+		}
+		if (document.malako.src == "3.png") {
+			document.malako.src = "4.png";
+			window.setTimeout(turnRight,100);
+		}
+		if (document.malako.src == "2.png") {
+			document.malako.src = "3.png";
+			window.setTimeout(turnRight,100);
+		}
+		if (document.malako.src == "1.png") {
+			document.malako.src = "2.png";
+			window.setTimeout(turnRight,100);
+		}
+		if (document.malako.src == "0.png") {
+			document.malako.src = "1.png";
+			window.setTimeout(turnRight,100);
+		}
+		if (document.malako.src == "-1.png") {
+			document.malako.src = "0.png";
+			window.setTimeout(turnRight,100);
+		}
+	}
+}
+</script>
+</head>
+<body>
+<div style="position: absolute; left:50%; margin-left: -161px; width: 323px;">
+	<img id="malako" name="malako" src="2.png"/>
+	<div id="leftSide" style="position: absolute; left: 50%; top: 0; margin-left: -161px;">
+		<img src="empty.png" onmouseover="run(); turnLeft();" onmouseout="stop();"/>
+	</div>
+	<div id="rightSide" style="position: absolute; left: 50%; top: 0;">
+		<img src="empty.png" onmouseover="run(); turnRight();" onmouseout="stop();"/>
+	</div>
+</div>
+</body>
+</html>

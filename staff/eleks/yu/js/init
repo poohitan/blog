@@ -1,0 +1,6 @@
+var chat = {
+	user : undefined;
+	blockedUsers : [];
+	socket : undefined;
+	secureUser : undefined;
+};

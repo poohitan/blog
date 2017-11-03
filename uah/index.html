@@ -1,0 +1,297 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Сторінка, присвячена знаку української гривні &#8372. Історія знаку гривні, як набрати знак гривні, коди знаку, де вже використовується.">
+<meta name="keywords" content="гривня, валюта, знак гривні, символ гривні, знак гривны, символ гривны, hryvnia sign, hryvnia symbol, uah, грн, грвн, гр, як набрати, де використовується, національний банк, Україна, гривні, гроші">
+<title>Знак гривні / Знак гривны / Hryvnia sign</title>
+<link href='http://fonts.googleapis.com/css?family=PT+Serif&subset=cyrillic,latin&v1' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="favicon.ico">
+<script>
+function read(type){
+param=document.getElementById(type);
+if(param.style.display == "none") param.style.display = "block";
+else param.style.display = "none"
+}
+</script>
+<script>
+var TIME = 24*60*60*1000; //1 день
+
+function getCookie(c_name)
+{
+var i,x,y,ARRcookies=document.cookie.split(";");
+for (i=0;i<ARRcookies.length;i++)
+{
+x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+x=x.replace(/^\s+|\s+$/g,"");
+if (x==c_name)
+{
+return unescape(y);
+}
+}
+}
+
+function setcookie (name, value) {
+var time = new Date();
+time.setTime(Date.parse(time) + TIME);
+document.cookie = name + '=' + value + '; expires=' + time;
+}
+
+function change() {
+document.getElementById('turn-symbol-to-img').innerHTML = "<center><div class='imgsign' title='Знак гривні'></div></center>";
+setcookie('bad', 'true');}
+
+function chk() {
+var st = getCookie('bad');
+if (st) change();
+}
+</script>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+  {lang: 'uk'}
+</script>
+</head>
+<body onload="chk();">
+<h1 style="padding-top:0;">В української гривні є свій знак:</h1>
+<div id="turn-symbol-to-img">
+	<span class="sign">&#8372;</span><br>
+	<span class="nosign"><a href="#" class="dotted" title="Натисніть, якщо ви не бачите знак гривні вище" onclick="change();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; — у вас щось таке замість знаку?</a></span>
+</div>
+
+<div class="text">
+	<p>Існує він ще з 2004 року, відколи Нацбанк затвердив його як офіційний знак української гривні, але незважаючи на це, він досі не набув широкого розповсюдження — усі й далі використовують звичне «грн.» Навіть <a href="rub-sign.gif">неофіційний знак російського рубля</a>, який пропагується кількома ентузіастами з 2007 року, є більш поширеним.</p>
+	<p>У тому, що про існування знаку гривні більшість українців навіть не здогадується, можна винуватити владу, яка нічого не зробила для його розповсюдження. А можна просто самому допомагати поширювати цей знак, всюди використовуючи його замість скорочення «грн.» Немає значення, чи ви продавець на ринку, чи власник онлайн-магазину — знак гривні легко як написати від руки, так і використати на веб-сторінці.</p>
+</div>
+
+<h1 id="howtotype">Як набрати знак гривні:</h1>
+<div class="text">
+	<h2>У Windows Vista, 7 або 8:</h2>
+	<p class="more">Потрібно вибрати розкладку <em>Українська (розширена)</em>&nbsp; і натиснути <nobr><code class="button">Shift</code> + <code class="button">~</code></nobr></p>
+	<h2>У Windows XP:</h2>
+	<ol class="more">
+		<li><a href="ukr_unicode_winxp.zip">Завантажте українську розкладку клавіатури з символами Unicode</a></li>
+		<li>Розархівуйте</li>
+		<li>Запустіть файл <em>setup.exe</em> (потрібно мати права адміністратора)</li>
+		<li>В налаштуваннях мовної панелі виберіть розкладку <em>Ukrainian Unicode</em></li>
+		<li>Тепер ви можете набирати знак гривні комбінацією клавіш <nobr><code class="button">Правий Alt</code> + <code class="button">Shift</code> + <code class="button">3</code><nobr> (або <nobr><code class="button">Ctrl</code> + <code class="button">Alt</code> + <code class="button">Shift</code> + <code class="button">3</code></nobr>)</li>
+	</ol>
+	<h2>У Mac OS X 10.10 Yosemite:</h2>
+	<p class="more">
+      Набирати знак гривні можна комбінацією клавіш <nobr><code class="button">Alt (Option)</code> + <code class="button">Shift</code> + <code class="button">Ф</code></nobr>
+  </ol>
+	<h2>У Mac OS X нижчих версій, ніж 10.10:</h2>
+	<ol class="more">
+		<li><a href="ukr_unicode_macos.zip">Завантажте українську розкладку клавіатури з символами Unicode</a></li>
+		<li>Розархівуйте</li>
+		<li>Файли <em>Ukrainian Unicode.keylayout</em>&nbsp; та <em>Ukrainian Unicode.icns</em>&nbsp; скопіюйте в <em>/Library/Keyboard Layout</em>&nbsp; (для усіх користувачів, потрібні права адміністратора) або в <em>~/Library/Keyboard Layouts</em>&nbsp; (лише для поточного користувача)</li>
+		<li>Перезавантажте комп'ютер (або зробіть Log out, Log in)</li>
+		<li>Зайдіть в <em>System Preferences &rarr; International &rarr; Input Menu</em>&nbsp; і оберіть <em>Ukrainian Unicode</em></li>
+		<li>Тепер ви можете набирати знак гривні комбінацією клавіш <nobr><code class="button">Alt (Option)</code> + <code class="button">Shift</code> + <code class="button">3</code></nobr></li>
+	</ol>
+	<h2>У iOS:</h2>
+	<p class="more">Потрібно відкрити <em>Параметри &rarr; Загальні &rarr; Міжнародні &rarr; Місцевий формат</em>&nbsp; та вибрати там <em>Україна</em>. Тепер ви можете набирати знак гривні, відкривши клавіатуру зі спецільними символами кнопкою <code class="button">.?123</code> та натиснувши там <code class="button">&#8372;</code>.</p>
+	<h2>У Android:</h2>
+	<p class="more">Завантажте і встановіть додаток <a href="https://play.google.com/store/apps/details?id=com.touchtype.swiftkey">SwiftKey Keyboard</a>. У додатку в списку <em>Доступні мови </em>виберіть <em>Українська</em>. Після завантаження українського мовного пакету, на клавіатурі з’явиться кнопка <code class="button">&#8372;</code>. Якщо такої кнопки не буде, але буде кнопка з символом іншої валюти, наприклад, <code class="button">$</code> — натисніть на неї та потримайте, після цього має з’явитись список з доступними символами валют. Серед них виберіть символ гривні.</p>
+</div>
+
+<h1 id="codes">Коди знаку гривні:</h1>
+<div class="text">
+	HTML (десяткова система): <code>&amp;#8372;</code><br>
+	HTML (шістнадцяткова система): <code>&amp;#x20b4;</code><br>
+	UTF-8 (шістнадцяткова): <code>0xE2 0x82 0xB4 (e282b4)</code><br>
+	UTF-8 (двійкова): <code>11100010:10000010:10110100</code><br>
+	UTF-16 (шістнадцяткова): <code>0x20B4 (20b4)</code><br>
+	UTF-16 (десяткова): <code>8 372</code><br>
+	UTF-32 (шістнадцяткова): <code>0x000020B4 (20b4)</code><br>
+	UTF-32 (десяткова): <code>8 372</code><br>
+	Для використання у C/C++/Java: <code>"\u20B4"</code><br>
+	Для використання у Python: <code>u"\u20B4"</code><br>
+</div>
+
+<h1 id="graphic">Графічний файл зі знаком гривні:</h1>
+<div class="text">
+	<p>Ви можете завантажити графічний файл зі знаком гривні у чотирьох варіантах (Regular, Italic, Bold, Bold Italic). Файл доступний у наступних форматах:</p>
+	<ul>
+		<li><a href="uahsign.svg">svg, 2.62 кБ</a></li>
+		<li><a href="uahsign.eps">eps, 597 кБ</a></li>
+		<li><a href="uahsign.png">png, 13.8 кБ, 513×585 пікселів</a></li>
+	</ul>
+	<div align="center"><img src="uahsign-preview.png" alt="Знак гривні" width="100" height="114"/></div>
+</div>
+
+<h1 id="rule">Правило використання знаку:</h1>
+<div class="text">
+	<p>Знак гривні потрібно писати після ціни, а не перед, і через пропуск. Приклади:</p>
+	<table align="center" width="400" border="0" class="rule">
+      <tr>
+        <td width="200"><div align="center">Правильно:</div></td>
+        <td width="200"><div align="center">Неправильно:</div></td>
+      </tr>
+      <tr>
+        <td rowspan="2"><div align="center" style="font-size:36px; font-family:'Times New Roman', Times, serif">100 ₴</div></td>
+        <td><div align="center" style="font-size:36px; font-family:'Times New Roman', Times, serif;">100₴</div></td>
+      </tr>
+      <tr>
+        <td><div align="center" style="font-size:36px; font-family:'Times New Roman', Times, serif;">₴100</span></td>
+      </tr>
+    </table>
+</div>
+
+<h1 id="who">Хто і де вже використовує:</h1>
+<div class="text">
+	<ul>
+		<li><a href="http://veles.co.ua">Сайт ресторану та готелю «Велес»</a> (розробник сайту — <a href="http://bohdan.com.ua">Богдан Гдаль</a>) <span class="date">14.09.2011</span></li>
+	    <li><a href="https://wikimediafoundation.org/wiki/%D0%9F%D1%80%D0%B8%D0%B9%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D1%8F">Фонд Вікімедіа Україна</a></li>
+		<li><a href="http://tokyo.uz.ua/ua/dastorya.html">Кафе-кав'ярня «Дасторія»</a> в Ужгороді <span class="date">13.11.2011</span>
+		  <ul class="attachment">
+				<li><a href="attachments/hdr_00014_1.jpg">hdr_00014_1.jpg</a></li>
+				<li><a href="attachments/hdr_00015_1.jpg">hdr_00015_1.jpg</a></li>
+		  </ul>
+		</li>
+		<li>Пристрої від <a href="http://apple.com">Apple</a> <span class="date">14.11.2011</span>
+			<ul class="attachment">
+				<li><a href="attachments/ipad.jpg">ipad-01.jpg</a></li>
+				<li><a href="attachments/ipad2.jpg">ipad-02.jpg</a></li>
+			</ul>
+		</li>
+		<li>Банк інвестицій та заощаджень
+			<ul class="attachment">
+				<li><a href="attachments/IMG_6607.jpg">IMG_6607.jpg</a></li>
+			</ul>
+		</li>
+		<li> <a href="http://store.artlebedev.ru/offline/pr/">«Примус»</a>, партнерський магазин <a href="http://artlebedev.ru">Студії Артемія Лебедєва</a> у Львові (зараз магазин вже не працює) <span class="date">16.11.2011</span>
+			<ul class="attachment">
+				<li><a href="attachments/verbarius.jpg">verbarius.jpg</a></li>
+				<li><a href="attachments/vespertilium.jpg">vespertilium.jpg</a></li>
+			</ul>
+		</li>
+		<li><a href="http://www.erstebank.ua/ua/">Ерсте банк</a> <span class="date">05.01.2012</span>
+			<ul class="attachment">
+				<li><a href="attachments/erste.jpg">erste.jpg</a></li>
+			</ul>
+		</li>
+		<li>Сайт <a href="http://play.google.com/">Google Play</a>, додаток Google Play для Android <span class="date">01.05.2012</span>
+			<ul class="attachment">
+				<li><a href="attachments/googleplay.png">googleplay.png</a></li>
+			</ul>
+		</li>
+		<li>Додаток <a href="https://play.google.com/store/apps/details?id=com.touchtype.swiftkey">SwiftKey X Keyboard</a> для Android <span class="date">01.05.2012</span></li>
+		<li>Портал програмного забезпечення <a href="http://download.ua">Download.ua</a> <span class="date">23.02.2012</span></li>
+		<li>Мобільна версія інтернет-аукціону <a href="http://aukro.ua">Aukro</a>
+			<ul class="attachment">
+				<li><a href="attachments/aukro-mobile.png">aukro-mobile.png</a></li>
+			</ul>
+		</li>
+		<li>Інтернет-видання <a href="http://inspired.com.ua">Inspired</a> <span class="date">21.12.2012</span></li>
+		<li><a href="http://google.ua">Google</a> 
+		  <ul class="attachment">
+				<li><a href="attachments/Qxww.png">Qxww.png</a></li>
+          </ul>
+	  </li>
+	    <li>Сайт оголошень <a href="http://ekomissionka.com.ua">ekomissionka.com.ua</a></li>
+	    <li>Банк <a href="http://www.finbank.com.ua">Фінансова ініціатива</a>
+			<ul class="attachment">
+				<li><a href="attachments/finbank_com_ua_2013_01_20.png">finbank_com_ua_2013_01_20.png</a></li>
+          </ul>
+		</li>
+	    <li>Інтернет-магазин <a href="http://www.марокканская-лавка.com.ua">Марокканская лавка</a> <span class="date">13.02.2012</span></li> 
+	    <li>Знак гривні присутній в <a href="http://www.the-ebook.org/forum/viewtopic.php?t=25582">українській розкладці</a> для Kindle Paperwhite / Touch <span class="date">15.02.2013</span></li>
+	    <li>Інтернет-магазин <a href="http://titan.ua">Титан</a> <span class="date">20.02.2012</span></li> 
+	    <li>Інтернет-магазин комп’ютерної техніки <a href="http://vivat-e.com.ua">vivat-e.com.ua</a> (вже не працює)<span class="date">20.02.2012</span></li>
+	    <li>Газета безкоштовних оголошень <a href="http://vashmagazin.ua/">Ваш Магазин</a> <span class="date">02.03.2013</span></li>
+	    <li>Мистецьке об’єднання <a href="http://dzyga.com">Дзиґа</a><span class="date">09.05.2013</span> </li>
+	    <li>Велика ідея <a href="http://biggggidea.com/">biggggidea.com</a><span class="date">17.06.2013</span></li>
+	    <li>Перше українське громадське телебачення <a href="http://hromadske.tv">hromadske.tv</a><span class="date">30.07.2013</span></li>
+        <li>Крамниця сайту «Рукотвори» <a href="http://rukotvory.com.ua/kramnychka/">rukotvory.com.ua/kramnychka</a><span class="date">29.08.2013</span></li>
+	    <li><a href="http://sf-bank.com.ua">Банк «Софійський»</a> прикрасив свою клумбу великим знаком гривні. 
+			Вона знаходиться за адресою місто Київ, просп. Повітрофлотський, 54, біля відділення банку.<span class="date">01.09.2013</span>
+	      <ul class="attachment">
+				<li><a href="attachments/kyiv_bank.jpg">kyiv_bank.jpg</a></li>
+          </ul>
+	  </li>
+	    <li>Сайт пошуку хостелів по всьому світі <a href="http://hostels.com">hostels.com</a><span class="date">13.10.2013</span> </li>
+	    <li>Магазин Студії Артемія Лебедєва <a href="http://store.artlebedev.ru/offline/sho/">«Шо за шоп»</a><span class="date">21.10.2013</span>
+		 <ul class="attachment">
+				<li><a href="attachments/sho-02.jpg">sho-02.jpg</a></li>
+		</ul>
+	  </li>
+	    <li>Коворкінг <a href="http://betaplace.com.ua/">«Betaplace»</a> у Львові<span class="date">25.10.2013</span></li>
+	    <li>Магазин люстр <a href="http://svitlo-lviv.com">svitlo-lviv.com</a><span class="date">07.12.2013</span> </li>
+	    <li>Додаток Skype для Android<span class="date">09.12.2013</span>
+			<ul class="attachment">
+				<li><a href="attachments/2013-12-09_17-58-02.png">2013-12-09_17-58-02.png</a></li>
+			</ul>
+		</li>
+		<li>Додаток <a href="https://play.google.com/store/apps/details?id=ch.bitspin.timely">Timely</a> для Android<span class="date">14.12.2013</span>
+			<ul class="attachment">
+				<li><a href="attachments/timely.png">timely.png</a></li>
+			</ul>
+	  </li>
+	  <li>Дизайнер Ілля Стронґовський <span class="date">16.03.2014</span></li>
+	  <li>Інтернет-магазин комп’ютерної техніки <a href="http://vivat.biz/">vivat.biz</a><span class="date">01.04.2014 </span></li>
+	  <li>Інтернет-магазин <a href="http://te.ua">te.ua</a><span class="date">01.04.2014</span></li>
+        <li>Портал новин <a href="http://zaxid.net">Zaxid.net</a><span class="date">12.08.2014</span></li>
+      <li>Велопрокат у Одесі <a href="http://need-a-bike.od.ua/ru/">Need-a-bike</a><span class="date">12.11.2014</span></li>
+      <li>Львівський фольк-гурт  <a href="http://perekotypole.pp.ua">«Перекоти Поле»</a><span class="date">17.11.2014</span></li>
+        <li><a href="https://twitter.com/MagicUkraine">Міністерство магії України</a><span class="date">16.12.2014</span>
+            <ul class="attachment">
+				<li><a href="attachments/ministry_of_magic.png">ministry_of_magic.png</a></li>
+			</ul>
+        </li>
+        <li>Магазин божественних шкарпеток <a href="http://www.sammy-icon.com/">Sammy Icon</a><span class="date">18.12.2014</span></li>
+		<li>Компанія <a href="http://www.asus.com/ua-ua/">Asus</a><span class="date">27.01.2015</span>
+			<ul class="attachment">
+				<li><a href="attachments/3743587249299948319_n.jpg">3743587249299948319_n.jpg</a></li>
+			</ul>
+        </li>
+        <li>Сервіс пошуку попутників <a href="http://blablacar.com.ua">BlaBlaCar</a><span class="date">15.02.2015</span>
+        </li>
+		<li>Київське метро<span class="date">22.03.2015</span>
+			<ul class="attachment">
+				<li><a href="attachments/metro.jpg">metro.jpg</a></li>
+			</ul>
+        </li>
+		<li>Магазин товарів для вишивання стрічками <a href="https://silk-garden.com/">Silk-Garden</a><span class="date">06.08.2015</span></li>
+		<li>Консалтингова компанія <a href="http://psiwell.com.ua/">«Сайвелл»</a><span class="date">19.01.2016</span></li>
+		<li>Інтернет-магазин <a href="http://www.паперовий-рай.укр/">«Паперовий Рай»</a><span class="date">18.05.2016</span></li>
+	    <li>Кіноклуб <a href="https://www.facebook.com/groups/1561550570834522/">«Ромни»</a><span class="date">28.05.2016</span></li>
+		<li>Онлайн-бібліотека <a href="https://equalibra.org">Equalibra</a><span class="date">26.12.2016</span></li>
+		<li>Хостинг <a href="http://ra.ck.ua">ra.ck.ua</a><span class="date">09.01.2017</span></li>
+		<li>…</li>
+	</ul>
+	<p>Якщо ви використовуєте знак гривні або просто побачили десь приклад його використання, будь ласка напишіть мені на електронну пошту: <a href="mailto:poohitan@gmail.com?subject=Знак гривні">poohitan@gmail.com</a>. Тут буде розміщено інформацію про це.</p>
+</div>
+
+<div id="langs">
+	<a title="Русский (російська)" class="ru" href="ru">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	<a title="English (англійська)" class="en" href="en">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+</div>
+<div id="share">
+	<a title="Поділитись у Twitter" class="twitter" href="http://twitter.com/intent/tweet?original_referer=&source=tweetbutton&text=%D0%9F%D1%80%D0%BE+%D0%B7%D0%BD%D0%B0%D0%BA+%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%97+%D0%B3%D1%80%D0%B8%D0%B2%D0%BD%D1%96&url=http%3A%2F%2Fpoohitan.com%2Fuah%2F&via=poohitan" target="_blank" onClick="popupWin = window.open(this.href, 'twitter', 'location,width=600,height=300,top=250,left=400'); popupWin.focus(); return false;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	<a title="Поділитись у Facebook" class="facebook" href="http://www.facebook.com/sharer/sharer.php?u=http://poohitan.com/uah/" target="_blank" onClick="popupWin = window.open(this.href, 'facebook', 'location,width=600,height=300,top=250,left=400'); popupWin.focus(); return false;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	<a title="Поділитись у ВКонтакті" class="vk" href="http://vk.com/share.php?url=http://poohitan.com/uah/" target="_blank" onClick="popupWin = window.open(this.href, 'vk', 'location,width=600,height=300,top=250,left=400'); popupWin.focus(); return false;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	<br>
+	<div class="google"><g:plusone size="small"></g:plusone></div>
+</div>
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-10797087-18']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!--/ Google Analytics -->
+</body>
+</html>

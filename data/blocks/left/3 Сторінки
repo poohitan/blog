@@ -1,0 +1,6 @@
+<div>
+<h3>Сторінки</h3>
+<?php
+pages_list('<a href=%link%>%page%</a><br/>');
+?>
+</div>

@@ -1,0 +1,27 @@
+<h1>Про</h1>
+Пишу рідко, але багато.<br><br>Зацікавлення (те, про що пишу чи буду писати): <a href="/tag/мандрівки">мандрівки</a>, <a href="/tag/ровер">ровер</a>, <a href="/tag/барабани">барабани</a>, музика, <a target="" title="" href="/tag/IT">IT</a>, <a target="" title="" href="/tag/програмування">програмування</a>, <a href="/tag/краса">краса</a>, печенько, <a target="" title="" href="/tag/дизайн">дизайн</a>, <a target="" title="" href="/tag/книжки">книжки</a>, <a href="/tag/місто">міста</a>, <a target="" title="" href="/tag/бомжування">бомжування</a>, перфекціонізм, автостоп, <a href="/tag/граматика">граматика</a> та інша <a href="/tag/туфта">туфта</a>.
+<br><br>Контакти:
+<ul style="list-style: none; margin-left: -20px;">
+<li style="background:url(http://poohitan.com/templates/social.png) no-repeat -20px -76px; padding-left:20px;"><a target="" title="" href="mailto:poohitan@gmail.com">poohitan@gmail.com</a></li>
+<li style="background:url(http://poohitan.com/templates/social.png) no-repeat -20px -37px; padding-left:20px;"><a target="" title="" href="https://www.facebook.com/poohitan">Bohdan Prokopovych</a></li>
+<li style="background:url(http://poohitan.com/templates/social.png) no-repeat -20px -17px; padding-left:20px;"><a target="" title="" href="http://twitter.com/poohitan">@poohitan</a></li>
+</ul>
+
+<div style="background:url(http://poohitan.com/templates/social.png) no-repeat 0 -76px; width:20px; height:14pt; float: left;"></div>RSS сайту: <a href="http://poohitan.com/rss/">poohitan.com/rss</a>
+<br><br>
+
+Ще щось:
+<ul>
+<li><a target="" title="" href="http://poohitan.com/uah">Сторінка про знак гривні ₴</a></li>
+<li><a target="" title="" href="http://poohitan.com/shutup">Кваліфіковані переклади фрази «стули пельку»</a></li>
+<li><a target="" title="" href="http://poohitan.com/webcolors">Таблиця «безпечних» кольорів</a></li>
+</ul>
+
+Сайт працює на основі <a target="" title="" href="http://mqblog.ru">Mosquito Bloody Mary</a> з такими сторонніми додатками:
+<ul>
+<li>WYSIWYG редактор <a target="" title="" href="http://nicedit.com">Nicedit</a></li>
+<li>Переглядач фотографій <a target="" title="" href="http://www.shadowbox-js.com/">Shadowbox</a></li>
+<li>Система коментування <a target="" title="" href="http://disqus.com">Disqus</a></li>
+</ul><br><!--Хмаринка теґів:
+<div style="margin-bottom: 15px; margin-left:125px; width: 300px;" align="center">
+<!?php tag_cloud() ?>-->

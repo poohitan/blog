@@ -1,0 +1,19 @@
+/*@font-face {
+    font-family: 'Myriad Pro';
+	src: url('myriadpro.eot');
+	src: local("Myriad Pro"),
+         local("Myriad_Pro"),
+         url('myriadpro.otf') format("opentype"),
+		 url('myriadpro.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}*/
+body {font-size:16px; font-family:Myriad Pro, Calibri, Trebuchet MS, Helvetica, Sans-serif; color:#666666; background:url(bg.png)}
+a {color:#0066FF; text-decoration:none;}
+a:hover {color:#0033FF; text-decoration:underline;}
+h1 {font-size:36px; text-align:center; color:#333333;}
+p {text-indent:35px; margin-top:25px;}
+p:first-letter {font-size:20px; color:#333333;}
+#col-left {width:30%; position:absolute; left:17%;}
+#col-right {width:30%; position:absolute; left:53%;}
+img {border-left:15px solid #333333; border-top:2px solid #333333; border-bottom:2px solid #333333; border-right:2px solid #333333; margin-left:5%; margin-right:5%; width:80%; height:53%;}

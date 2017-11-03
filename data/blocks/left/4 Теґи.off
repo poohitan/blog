@@ -1,0 +1,10 @@
+<div>
+<h3>Теґи</h3>
+<div>
+<ul>
+<?php
+tag_list('<li><a href=%link%>%tag%</a> (%num%)</li>');
+?>
+</ul>
+</div>
+</div>

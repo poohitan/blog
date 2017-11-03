@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Завдання для 10А та 10Д класів. 15 листопада</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <meta charset="utf-8"/>
+    <style>
+        body {
+            background-image: url(bg-fancy.gif);
+        }
+        hr {
+            margin: 20px 0;
+        }
+        
+        #header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            padding: 5px 0;
+            margin: 0;
+        }
+        #header h4 {
+            padding: 0 0;
+            margin: 0;
+        }
+        
+        .info {
+            background-image: url(info-48.png);
+            background-repeat: no-repeat;
+            background-position: 15px 50%;
+            border: 1px solid #f6ca27;
+            margin: 10px 0;
+            padding: 15px 15px 15px 78px;
+        }
+        
+        .attention {
+            background-image: url(attention-48.png);
+            background-repeat: no-repeat;
+            background-position: 15px 50%;
+            border: 1px solid #bf3d27;
+            margin: 10px 0;
+            padding: 15px 15px 15px 78px;
+        }
+        
+        .contacts {
+            background-image: url(mail-48.png);
+            background-repeat: no-repeat;
+            background-position: 15px 50%;
+            border: 1px solid #218dd6;
+            margin: 10px 0;
+            padding: 15px 15px 15px 78px;
+        }
+        
+        .info p, .attention p, .contacts p {
+            padding: 2px 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>Завдання для 10А та 10Д класів</h1>
+            <h4 style="color: #999; margin-top: 0; padding-top: 0">14 листопада 2014 року</h4>
+        </div>
+        <hr>
+        
+        <div class="item">
+            <h2>Завдання #1</h2>
+                <p>Напишіть програму, яка:</p>
+            <ol>
+                <li>Запитує користувача його ім’я;</li>
+                <li>Дає користувачу ввести своє ім’я;</li>
+                <li>Запитує користувача його прізвище;</li>
+                <li>Дає користувачу ввести своє прізвище;</li>
+                <li>Виводить на екран привітання до користувача, звертаючись до нього за ім’ям та прізвищем.</li>
+            </ol>
+            <p>
+                Приклад «діалогу» з такою програмою:<br>
+                <span style="color: #999;"><i>програма виводить:</i></span> Привіт, як тебе звати?<br>
+                <span style="color: #999;"><i>користувач вводить:</i></span> Джон<br>
+                <span style="color: #999;"><i>програма виводить:</i></span> А яке твоє прізвище?<br>
+                <span style="color: #999;"><i>користувач вводить:</i></span> Доу<br>
+                <span style="color: #999;"><i>програма виводить:</i></span> Як справи, Джон Доу?
+            </p>
+        </div>
+        
+        <hr>
+        
+        <div class="item">
+            <h2>Завдання #2</h2>
+            <p>Зчитайте з консолі рядок та окремий символ. Порахуйте, скільки разів цей символ входить у рядок. Виведіть на екран отримане число.</p>
+            <div class="info">
+            <p>Робота із рядками нічим не відрізняється від роботи з масивами (як ви пам’ятаєте, рядок — це і є масив, масив символів). Тому ви можете скористатись циклом, щоб пройтись по кожному символі масиву.</p>
+            </div>
+        </div>
+        <hr>
+        
+        <div class="item">
+            <h2>Завдання #3</h2>
+            <p>Зчитайте з консолі рядок. Всі маленькі букви у цьому рядку перетворіть на великі, і навпаки. Виведіть на екран отриманий рядок.</p>
+            <p>Приклад:<br>
+                <span style="color: #999;"><i>користувач вводить:</i></span> Repetitio MAteR studiorum EST.<br>
+                <span style="color: #999;"><i>програма виводить:</i></span> rEPETITIO maTEr STUDIORUM est.<br>
+            </p>
+            <div class="attention">
+                <p>На лекції не було сказано, як перетворити маленький символ у великий. Для цього потрібно використати функцію UpCase(). Вона приймає якийсь символ, і якщо цей символ маленький, то результатом цієї функції буде цей самий символ, але вже великий.</p>
+                <p>
+                    Приклад роботи функції UpCase():<br>
+                    <code>
+                        program upcase_example;<br>
+                        var c1, c2: char;<br>
+                        begin<br>
+                            c1 := 'a';<br>
+                            c2 := UpCase(c1);<br>
+                            writeln(c2); //виведе велику букву 'A'<br>
+                        end.
+                    </code>
+                </p>
+            </div>
+            
+            <div class="info">
+                <p>Подумайте, як за допомогою функції UpCase() можна зробити навпаки: перетворити великий символ у маленький.</p>
+            </div>
+        </div>
+        
+        <hr>
+        
+        <div class="item">
+            <h2>Завдання #4</h2>
+            <p>Зчитайте з консолі рядок. Перемістіть перші 5 букв в кінець рядка, і виведіть на екран те, що вийшло.</p>
+            <p>Приклад:<br>
+                <span style="color: #999;"><i>користувач вводить:</i></span> Led Zeppelin<br>
+                <span style="color: #999;"><i>програма виводить:</i></span> eppelin Led Z<br>
+            </p>
+
+            <div class="info">
+                <p>Тут вам потрібно буде використати функції Copy() та Delete().</p>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <h1>Контактна інформація</h1>
+        <div class="contacts">
+        <p>
+            Якщо у вас є якісь питання по Pascal або загалом по інформатиці, щось цікавить, або щось не виходить можете писати мені:
+        </p>
+            <ul>
+                <li>Емейл: poohitan@gmail.com</li>
+                <li>Facebook: <a href="http://facebook.com/poohitan">facebook.com/poohitan</a></li>
+                <li>ВК: <a href="http://www.vk.com/id52535322">vk.com/id52535322</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+body {font-family:"Open Sans", "Myriad Pro", Arial, sans-serif;}
+a {color:#ed1f24; text-decoration:underline;}
+a:hover {color:#aa161a; text-decoration:underline;}
+img {border:none; padding:5px;}
+#wrapper {
+	width:800px;
+	font-size:15px;
+	font-style:normal;
+	font-variant:normal;
+}
+#header {
+	margin:20px 40px;
+	height:93px;
+}
+#logo {float:left;}
+#logo img {padding:0;}
+#slogan {
+	float:right; 
+	color:#999; 
+	font-size:16px; 
+	font-style:italic; 
+	line-height:1.5em; 
+	margin-top:10px;
+}
+#slogan li {list-style:none;}
+#menu {
+	background:#efefef;
+	border-radius:10px;
+	font-size:17px;
+	font-weight:bold;
+	text-align:center;
+	padding:10px 0;
+}
+#menu a {color:#000; text-decoration:none;}
+#menu ul {padding:0; margin:0;}
+#menu li {
+	list-style:none;
+	display:inline;
+	padding:10px;
+}
+#menu li:hover {
+	background:#ed1f24;
+	border-radius:10px;
+	padding:10px;
+	color:#fff;
+	cursor:hand;
+	cursor:pointer;
+}
+#content {
+	width:760px;
+	margin-left:20px;
+	line-height:1.7em;
+}
+#content p {text-indent:40px;}
+#login-icon {
+	width:16px;
+	height:16px;
+	background-image:url(login.gif);
+	background-position:right;
+	background-repeat:no-repeat;
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+#login-icon:hover {background-image:url(login-2.gif);}
+hr {border:1px solid #ccc;} 

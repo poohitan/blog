@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Завдання для 10А та 10Д класів. 15 листопада</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <meta charset="utf-8"/>
+    <style>
+        body {
+            background-image: url(bg-fancy.gif);
+        }
+        hr {
+            margin: 20px 0;
+        }
+        
+        #header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            padding: 5px 0;
+            margin: 0;
+        }
+        #header h4 {
+            padding: 0 0;
+            margin: 0;
+        }
+        
+        .info {
+            background-image: url(info-48.png);
+            background-repeat: no-repeat;
+            background-position: 15px 50%;
+            border: 1px solid #f6ca27;
+            margin: 10px 0;
+            padding: 15px 15px 15px 78px;
+        }
+        
+        .attention {
+            background-image: url(attention-48.png);
+            background-repeat: no-repeat;
+            background-position: 15px 50%;
+            border: 1px solid #bf3d27;
+            margin: 10px 0;
+            padding: 15px 15px 15px 78px;
+        }
+        
+        .contacts {
+            background-image: url(mail-48.png);
+            background-repeat: no-repeat;
+            background-position: 15px 50%;
+            border: 1px solid #218dd6;
+            margin: 10px 0;
+            padding: 15px 15px 15px 78px;
+        }
+        
+        .info p, .attention p, .contacts p {
+            padding: 2px 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>Завдання для 10А та 10Д класів</h1>
+            <h2>Процедури в Pascal</h2>
+            <h4 style="color: #999; margin-top: 0; padding-top: 0">29 листопада 2014 року</h4>
+        </div>
+        <hr>
+        
+        <div class="item">
+            <h2>Завдання #1</h2>
+            <p>Напишіть процедуру <b>sayHello</b>, яка буде виводити на екран привітання до людини із заданим іменем. Наприклад, виклик процедури <code>sayHello('Petro')</code> має вивести на екран «Hello Petro!». Виведіть на екран привітання до кількох різних людей.</p>
+        </div>
+        
+        <hr>
+        
+        <div class="item">
+            <h2>Завдання #2</h2>
+            <p>Напишіть процедуру <b>average</b> для визначення середнього арифметичного двох чисел.</p>
+            <p>Продемонструйте роботу своєї процедури на кількох прикладах.</p>
+            <div class="info">
+            <p>У цій процедурі вам потрібно буде використати три параметри — два для чисел, середнє арифметичне яких ви будете шукати, і один параметр для результату процедури. Наприклад, виклик процедури <code>average(7, 3, res)</code> має записати у змінну res число 5.</p>
+            </div>
+            <div class="attention">
+                <p>Не забувайте в списку параметрів процедури використовувати ключове слово <code>var</code> там, де це потрібно.</p>
+            </div>
+        </div>
+        <hr>
+        
+        <div class="item">
+            <h2>Завдання #3</h2>
+            <p>Напишіть процедуру <b>factorial</b> для обчислення факторіалу заданого числа. Продемонструйте її роботу на кількох прикладах.</p>
+            <div class="info">
+                <p>Для тих, хто не знає, що таке факторіал числа. Факторіалом натурального числа <b>n</b> називається добуток всіх чисел від одиниці до <b>n</b> включно. Позначається <b>n!</b>. За означенням 0!=1</p>
+            </div>
+        </div>
+        <hr>
+        
+        <div class="item">
+            <h2>Завдання #4</h2>
+            <p>Напишіть процедуру, яка буде визначати, чи знаходиться задана точка в межах заданого прямокутника.</p>
+            <p>Процедура повинна мати такі параметри: <code>x1, y1, x2, y2, x, y: integer;</code>, де <code>x1, y1</code> — координати верхнього лівого кута прямокутника; <code>x2, y2</code> — координати правого нижнього кута прямокутника; <code>x, y</code> — координати точки. Якщо точка належить прямокутнику, процедура повинна вивести на екран <b>«yes»</b>, в іншому випадку — <b>«no»</b>.</p>
+            <p>Вважати, що ребра прямокутника паралельні до осей координат. <br>
+            Якщо точка лежить на межі прямокутника, вважати, що вона належить до нього.</p>
+        </div>
+    </div>
+    <div id="wrapper">
+        <h1>Контактна інформація</h1>
+        <div class="contacts">
+        <p>
+            Якщо у вас є якісь питання по Pascal або загалом по інформатиці, щось цікавить, або щось не виходить можете писати мені:
+        </p>
+            <ul>
+                <li>Емейл: <a href="mailto:poohitan@gmail.com">poohitan@gmail.com</a></li>
+                <li>Facebook: <a href="http://facebook.com/poohitan">facebook.com/poohitan</a></li>
+                <li>ВК: <a href="http://www.vk.com/id52535322">vk.com/id52535322</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

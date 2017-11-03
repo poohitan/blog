@@ -1,0 +1,61 @@
+input[type="text"] {
+    border: 1px solid @light-grey;
+    color: @dark-grey;
+    height: 30px;
+    padding: 0 10px;
+    margin: 0;
+    .transition(all 150ms linear);
+    width: 130px;
+    
+    &:focus {
+        border: 1px solid @main-color-darker;
+        color: darken(@dark-grey, 20%);
+    }
+}
+
+input[type="radio"] {
+    display: none;
+    
+    &+label {
+        background: url("../images/sprite.png") 0 0 no-repeat;
+        cursor: pointer;
+        overflow: hidden;
+        padding: 0 5px 0 22px;
+        width: 20px;
+    }
+    
+    &:checked + label {
+        background-position: 0 -20px;
+    }
+}
+
+input[type="submit"] {
+    background-color: @main-color-darker;
+    border: 0 none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-family: 'Open Sans', Verdana, helvetica, sans-serif;
+    padding: 7px 10px;
+    .transition(all 120ms linear);
+    
+    &:hover {
+        background-color: @main-color;
+    }
+}
+
+input[type="button"] {
+    background-color: #fff;
+    border: 1px solid @main-color;
+    color: @main-color;
+    cursor: pointer;
+    font-size: .9em;
+    font-family: 'Open Sans', Verdana, helvetica, sans-serif;
+    padding: 5px 10px;
+    .transition(all 120ms linear);
+    
+    &:hover {
+        background-color: @main-color;
+        color: #fff;
+    }
+}

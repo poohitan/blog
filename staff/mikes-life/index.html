@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/hls.js/latest/hls.min.js"></script>
+<div>
+  Stream Key:
+  <input type="text" class="stream-key"/>
+</div>
+or
+<div>
+  Mobile Stream Key:
+  <input type="text" class="mobile-stream-key"/>
+</div>
+<div><button class="play">Play</button></div>
+<video class="video"></video>
+<script>
+  document.querySelector('.play').addEventListener('click', function () {
+    var streamKey = document.querySelector('.stream-key').value,
+      mobileStreamKey = document.querySelector('.mobile-stream-key').value;
+
+    if (mobileStreamKey) {
+      play(mobileStreamKey, true);
+    } else {
+      play(streamKey);
+    }
+
+  });
+
+  function play(streamKey, isMobile) {
+    var prefix = isMobile ? 'mobile' : 'live',
+      streamURL = "http://35.157.104.244/" + prefix + "/" + streamKey + "/index.m3u8";
+
+    console.log('Trying to play', streamURL);
+
+     if(Hls.isSupported()) {
+       var video = document.querySelector('.video');
+       var hls = new Hls();
+       hls.loadSource(streamURL);
+       hls.attachMedia(video);
+       hls.on(Hls.Events.ERROR, function (error) {
+         console.error(error)
+       });
+       hls.on(Hls.Events.MANIFEST_PARSED,function() {
+         video.play();
+     });
+    }
+  }
+</script>
+</body>
+</html>

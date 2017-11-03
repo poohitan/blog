@@ -1,0 +1,30 @@
+body {font-family: Helvetica, sans-serif; color:#333333; background-image:url(bg.gif)}
+h1 {font-size:20px;}
+h2 {color:#666666; font-size:20px;}
+h2:hover {color:#333333;}
+p {
+	font-size:14px;
+	width:350px;
+	text-align:left;
+}
+sup {font-size:10px; color:#666666; padding:2px;}
+a {color:#CC0000; text-decoration:none;}
+a:visited {color:#CC0000; text-decoration:none;}
+.code {color:#CC0000; font-style:italic;}
+#more {padding-bottom: 10px;}
+#color {
+	width:60px;
+	height:60px;
+	margin:2px;
+	cursor:pointer;
+}
+#colors {width:400px;}
+.popup {
+	font-family:Arial, Helvetica, sans-serif;
+	width:120px;
+	background: #FFFFFF;
+	padding:10px;
+	text-align:center;
+	font-size:10px;
+	border:1px solid #333333;
+}

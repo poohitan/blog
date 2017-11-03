@@ -1,0 +1,70 @@
+body {
+	font-family:'PT Serif', Helvetica, Serif; 
+	font-size:14px;
+	color:#252525;
+	text-align:center; 
+	margin-top:30px;
+	margin-bottom:50px;
+	background:url(http://poohitan.com/cake/bg.png);
+}
+a {color:#046682; text-decoration:underline;}
+a:hover {color:#0c9bc5;}
+a.dotted {text-decoration:none; border-bottom:1px dotted #046682;}
+a.dotted:hover {text-decoration:none; border-bottom:1px dotted #0c9bc5;}
+h1 {font-size:22px; font-weight:normal; padding-top:10px;}
+h2 {font-size:16px; font-weight:normal; margin-bottom:-10px;}
+p {text-indent:40px;}
+code {color:#046682; background-color:#fff; padding:1px;}
+code::selection {color:#fff; background:#046682;}
+code::-moz-selection {color:#fff; background:#046682;}
+code::-webkit-selection {color:#fff; background:#046682;}
+.button {border:1px solid #CCCCCC; border-radius:3px; -moz-border-radius:3px; -khtml-border-radius:3px; padding:1px 5px 1px 5px; margin:0px 3px 0px 3px;}
+.ibutton {border:1px solid #333333; border-radius:3px; -moz-border-radius:3px; -khtml-border-radius:3px; padding:2px 4px 2px 4px; margin:0px 3px 0px 3px; color:#000000;}
+li {list-style:circle;}
+.sign {font-size:288px; font-weight:bold; font-family:"Times New Roman", Times, serif; color:#0c9bc5;}
+.nosign {background:url('sprite.gif'); background-repeat:no-repeat; background-position:0 0; padding-bottom:-5px; font-size:13px;}
+.nosign:hover {background-position:0 -19px;}
+.imgsign {width:156px; height:210px; margin:120px 0px 65px 0px; background:url('sprite.gif'); background-repeat:no-repeat; background-position:0 -40px;}
+.text {width:60%; margin:0px 20% 0 20%; text-align:left;}
+.more {background-color: #F7F7F7; padding:10px 10px 10px 25px; margin-left:5%; margin-bottom:5px;}
+.date {color:#046682; background-color:#F7F7F7; padding:1px 3px; margin-left:10px; font-size:11px;}
+p.more {text-indent:0; padding:10px;}
+.attachment li {list-style-image:url(attachment.png);}
+#langs {position:absolute; left:10px; top:10px;}
+#langs a {text-decoration:none; border:none; font-size:11px;}
+#langs a.uk {width:16px; height:11px; background: url('flags.gif'); background-repeat:no-repeat; background-position:0 4px;}
+#langs a.uk:hover {background-position:-20px 4px;}
+#langs a.ru {background: url('flags.gif'); background-repeat:no-repeat; background-position:0 -11px;}
+#langs a.ru:hover {background-position:-20px -11px;}
+#langs a.en {width:16px; height:11px; background: url('flags.gif'); background-repeat:no-repeat; background-position:0 -26px;}
+#langs a.en:hover {background-position:-20px -26px;}
+#share {position:absolute; right:10px; top:10px;}
+#share a {text-decoration:none; border:none;}
+#share a.vk {width:16px; height:16px; background:url('share.gif'); background-repeat:no-repeat; background-position:0 0;}
+#share a.vk:hover {background-position:-20px 0;}
+#share a.twitter {width:16px; height:16px; background:url('share.gif'); background-repeat:no-repeat; background-position:0 -20px;}
+#share a.twitter:hover {background-position:-20px -20px;}
+#share a.facebook {width:16px; height:16px; background:url('share.gif'); background-repeat:no-repeat; background-position:0 -40px;}
+#share a.facebook:hover {background-position:-20px -40px;}
+.rule {
+	font-family: "Times New Roman", Times, serif;
+	background-color: #F7F7F7;
+	padding:10px 10px 10px 25px;
+	text-align:center;
+	vertical-align:middle;
+}
+.google {
+	margin-top:5px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	-khtml-opacity: 0.6;
+	opacity: 0.6;
+}
+.google:hover {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}

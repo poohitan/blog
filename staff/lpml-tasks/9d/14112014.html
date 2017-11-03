@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Завдання для 9Д. 14 листопада 2014</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <meta charset="utf-8"/>
+    <style>
+        body {
+            background-image: url(bg-fancy.gif);
+        }
+        hr {
+            margin: 20px 0;
+        }
+        
+        #header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            padding: 5px 0;
+            margin: 0;
+        }
+        #header h4 {
+            padding: 0 0;
+            margin: 0;
+        }
+        
+        .info {
+            background-image: url(info-48.png);
+            background-repeat: no-repeat;
+            background-position: 15px 50%;
+            border: 1px solid #f6ca27;
+            margin: 10px 0;
+            padding: 15px 15px 15px 78px;
+        }
+        
+        .attention {
+            background-image: url(attention-48.png);
+            background-repeat: no-repeat;
+            background-position: 15px 50%;
+            border: 1px solid #bf3d27;
+            margin: 10px 0;
+            padding: 15px 15px 15px 78px;
+        }
+        
+        .contacts {
+            background-image: url(mail-48.png);
+            background-repeat: no-repeat;
+            background-position: 15px 50%;
+            border: 1px solid #218dd6;
+            margin: 10px 0;
+            padding: 15px 15px 15px 78px;
+        }
+        
+        .info p, .attention p, .contacts p {
+            padding: 2px 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>Завдання для 9Д класу</h1>
+            <h4 style="color: #999; margin-top: 0; padding-top: 0">14 листопада 2014 року</h4>
+        </div>
+        <hr>
+        
+        <div class="item">
+            <h2>Завдання #1</h2>
+                <ol>
+                    <li>Відкрийте блокнот, створіть у ньому порожню HTML-сторінку та збережіть в себе на комп’ютері.</li>
+                    <li>Вставте на цю сторінку посилання на сайт <a href="http://www.lpml.com.ua" title="Сайт ліцею">www.lpml.com.ua</a>. При наведенні курсора на це посилання, повинна з’являтись спливаюча підказка з текстом «Сайт ліцею».</li>
+                </ol>
+                <div class="info">
+                    <p>Посилання робиться за допомогою теґу <code>&lt;a&gt;</code>.</p>
+                    <p>Адреса сторінки, на яку вказує посилання записується в атрибуті <code>href</code> теґу <code>&lt;a&gt</code>, а 
+                    текст спливаючого повідомлення — в атрибуті <code>title</code>.</p>
+                    <p>Приклад посилання:<br>
+                        <code>&lt;a href="http://google.com" title="Google">Google&lt;/a&gt;</code>
+                    </p>
+                </div>
+            
+                <div class="attention">
+                    <p>Не забувайте, що всі посилання на інші сайти мають починатись із <br><code>http://</code></p>
+                </div>
+        </div>
+    <hr>
+    <div class="item">
+            <h2>Завдання #2</h2>
+            <p>На цю саму сторінку вставте зображення — наприклад, свою аватарку з Facebook або ВК.</p>
+                <div class="info">
+                    <p>Зображення вставляється за допомогою теґу <code>&lt;img&gt;</code>.</p>
+                    <p>Адреса зображення, яке ви вставляєте, записується в атрибуті <code>src</code>.</p>
+                    <p>Можна обмежити висоту та ширину зображення. Для цього потрібно задати атрибути width та/або height.
+                    </p>
+                    <p>
+                        Приклад:<br>
+                        <code>&lt;img src="http://cs424630.vk.me/v424630322/<br>6fd3/DKMLsbEwaIg.jpg" width="500"/&gt;</code>
+                    </p>
+                </div>
+        </div>
+    <hr>
+    <div class="item">
+            <h2>Завдання #3</h2>
+            <p>На цю саму сторінку вставте таблицю із одним стовпцем та сімома рядками. </p>
+                <ol>
+                    <li>В кожному рядку білими буквами має бути написано колір веселки (починаючи від «Червоний» в першому рядку, і закінчуючи на «Фіолетовий» в останньому).</li>
+                    <li> Тло кожної клітинки має бути того кольору, назва якого записана в цій клітинці (наприклад, тло верхньої клітинки має бути червоним)</li>
+                    <li>Кожна клітинка таблиці повинна мати відступ 20 пікселів.</li>
+                    <li>Текст у таблиці повинен бути вирівняний по центру.</li>
+                    <li>Шрифт повинен бути Arial.</li>
+                    <li>Розмір букв у таблиці повинен бути 22 пікселі.</li>
+                </ol>
+            <p>Результат має виглядати приблизно так:</p>
+                <div align="center">
+                    <img src="3-sample.png" border="0"/>
+                </div>
+            
+        
+                <div class="info">
+                    <p>
+                        Стилі записуються в атрибуті <code>style</code> відповідних теґів. Наприклад, стилі, які стосуються усієї таблиці, записуються в атрибуті <code>style</code> теґу <code>&lt;table&gt;</code>, стилі для окремої клітинки — в атрибуті <code>style</code> теґу <code>&lt;td&gt;</code>, і так далі.
+                    </p>
+                </div>
+                <div class="info">
+                    <p>
+                        Колір тексту задається за допомогою слова <code>color</code>. Приклад:<br>
+                        <code>&lt;p style="color: yellow"&gt;Тут буде жовтий текст&lt;/p&gt;</code>
+                    </p>
+                    <p>
+                        Колір тла задається за допомогою <code>background-color</code>.
+                    </p>
+                    <p>
+                        Відступ задається за допомогою <code>padding</code>. Значення потрібно задавати у пікселях, наприклад: <code>10px</code>.
+                    </p>
+                    <p>
+                        Шрифт задається за допомогою <code>font-family</code>. Наприклад:<br>
+                        <code>&lt;p style="font-family: Tahoma"&gt;Тут буде текст, написаний шрифтом Tahoma&lt;/p&gt;</code>
+                    </p>
+                    <p>
+                        Розмір шрифту задається за допомогою <code>font-size</code>. Значення також потрібно задавати у пікселях.
+                    </p>
+                    <p>
+                        Відступ задається за допомогою <code>padding</code>. Значення — у пікселях.
+                    </p>
+                </div>
+                <div class="attention">
+                    <p>У завданні написано, що текст у таблиці повинен бути вирівняний по центру, а на лекції не було сказано, як це зробити.</p>
+                    <p>
+                        Вирівнювання тексту також можна задати у атрибуті <code>style</code>. Для цього використовується <code>text-align</code>. Наприклад, щоб вирівняти текст в одній клітинці по центру, потрібно написати:<br>
+                        <code>
+                            &lt;td style="text-align: center"&gt;Текст, вирівняний по центру клітинки&lt;/td&gt;
+                        </code>
+                        <br>
+                        Щоб вирівняти текст по правому або лівому краю, потрібно написати не <code>center</code>, а <code>right</code> чи <code>left</code> відповідно.
+                    </p>
+                </div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <h1>Контактна інформація</h1>
+        <div class="contacts">
+        <p>
+            Якщо вас цікавить щось додаткове про HTML чи просто по інформатиці, або щось не виходить, можете писати:
+        </p>
+            <ul>
+                <li>Емейл: poohitan@gmail.com</li>
+                <li>Facebook: <a href="http://facebook.com/poohitan">facebook.com/poohitan</a></li>
+                <li>ВК: <a href="http://www.vk.com/id52535322">vk.com/id52535322</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Гомер ховається</title>
+<style>
+	#homerTop {position: absolute; top:-500px;} /*початкові позиції всіх Гомерів такі, щоб їх не було видно на екрані*/
+	#homerLeft {position: absolute; top:-500px;}
+	#homerRight {position: absolute; top:-500px;}
+	#homerBottom {position: absolute; bottom:-500px;}
+	body {overflow:hidden;} /*щоб не з’являлись смуги прокрутки, коли Гомера показує справа або знизу*/
+</style>
+<script type="text/javascript">
+function screenSize() {
+      var w, h;
+      w = (window.innerWidth ? window.innerWidth : (document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.offsetWidth));
+      h = (window.innerHeight ? window.innerHeight : (document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.offsetHeight));
+      return {w:w, h:h};
+}
+//бидлокод
+function myrandom(from,to){
+    return Math.floor(Math.random()*(to-from+1)+from);
+}
+var count = 0;
+function initialize() { //рендомно вибираємо одну із чотирьох сторін екрана,
+	var side; //і викливаємо функцію, яка покаже схованого Гомера з відповідної сторони
+	side = Math.floor(Math.random()*4)+1; 
+	switch (side) {
+		case 1: initializeTop(); 
+		break;
+		case 2: initializeLeft(); 
+		break;
+		case 3: initializeRight()
+		break;
+		case 4: initializeBottom(); 
+		break;
+		default: initializeTop();
+	}
+}
+function initializeTop() { //показує схованого Гомера зверху
+	var homerTop; 
+	homerTop = document.getElementById('homerTop'); //шукаємо блок з id="homerTop"
+	var width = screenSize().w; //і міняємо його значення top та left 
+	var left = myrandom(-10,width-10); //на такі
+	var top = myrandom(57,63);
+	homerTop.style.top = '-' + top + 'px';
+	homerTop.style.left = left + 'px';
+}
+function initializeLeft() { //аналогічно
+	var homerLeft;
+	homerLeft = document.getElementById('homerLeft');
+	var height = screenSize().h;
+	var top = myrandom(-10,height-10);
+	var left = myrandom(57,61);
+	homerLeft.style.top = top + 'px';
+	homerLeft.style.left = '-' + left + 'px';
+}
+function initializeRight() { //аналогічно
+	var homerRight;
+	homerRight = document.getElementById('homerRight');
+	var height = screenSize().h;
+	var width = screenSize().w;
+	var top = myrandom(-10,height-10);
+	var right = myrandom(57,61);
+	homerRight.style.top = top + 'px';
+	homerRight.style.right = '-' + right + 'px';
+}
+function initializeBottom() { //аналогічно
+	var homerBottom;
+	homerBottom = document.getElementById('homerBottom');
+	var width = screenSize().w;
+	var left = myrandom(-10,width-10);
+	var bottom = myrandom(57,63);
+	homerBottom.style.bottom = '-' + bottom + 'px';
+	homerBottom.style.left = left + 'px';
+}
+function showTop() { //ця функція викливається при наведенні курсора на блок homerTop
+	homerTop.style.top = '-2px'; //Гомер вилазить
+	setTimeout("homerTop.style.top = '-65px';", 400); //через 400 мілісекунд (приблизно стільки часу триває звук крику) ховається знову
+	var interval = myrandom(500,5000); 
+	setTimeout(initialize, interval); //і через рендомний відрізок часу знову десь з’являється
+	count++;
+}
+function showLeft() { //аналогічно
+	homerLeft.style.left = '-2px';
+	setTimeout("homerLeft.style.left = '-65px';", 400);
+	var interval = myrandom(500,5000);
+	setTimeout(initialize, interval);
+	count++;
+}
+function showRight() { //аналогічно
+	homerRight.style.right = '-2px';
+	setTimeout("homerRight.style.right = '-65px';", 400);
+	var interval = myrandom(500,5000);
+	setTimeout(initialize, interval);
+	count++;
+}
+function showBottom() {//аналогічно
+	homerBottom.style.bottom = '-2px';
+	setTimeout("homerBottom.style.bottom = '-65px';", 400);
+	var interval = myrandom(500,5000);
+	setTimeout(initialize, interval);
+	count++;
+}
+var stop; //якщо користувач встигне пройтися по Гомеру курсором кілька разів, функція initialize() викличеться кілька разів,
+function run(showTop) { //і тоді з’явиться кілька Гомерів. ця функція запобігає цьому, вона забороняє виклик функції show%%% швидше, ніж за 
+	stop || (stop = !0, window.setTimeout("stop=!1", 400), showTop()); //400 мілісекунд після останнього виклику.
+}; //при наведенні на Гомера викливається не безпосередньо функція show%%%, а run(show%%%).
+</script>
+</head>
+<body onLoad="initialize();">
+<div id="count">
+</div>
+<div id="homerTop" onMouseOver="run(showTop);">
+<div id="flashContent">
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="51" height="65" id="homerrTop" align="middle">
+				<param name="movie" value="homerTop.swf" />
+				<param name="quality" value="high" />
+
+				<param name="bgcolor" value="#ffffff" />
+				<param name="play" value="true" />
+				<param name="loop" value="true" />
+				<param name="wmode" value="transparent" />
+				<param name="scale" value="showall" />
+				<param name="menu" value="true" />
+				<param name="devicefont" value="false" />
+				<param name="salign" value="" />
+				<param name="allowScriptAccess" value="sameDomain" />
+
+				<!--[if !IE]>-->
+				<object type="application/x-shockwave-flash" data="homerTop.swf" width="51" height="65">
+					<param name="movie" value="homerTop.swf" />
+					<param name="quality" value="high" />
+					<param name="bgcolor" value="#ffffff" />
+					<param name="play" value="true" />
+					<param name="loop" value="true" />
+					<param name="wmode" value="transparent" />
+					<param name="scale" value="showall" />
+
+					<param name="menu" value="true" />
+					<param name="devicefont" value="false" />
+					<param name="salign" value="" />
+					<param name="allowScriptAccess" value="sameDomain" />
+				<!--<![endif]-->
+					<a href="http://www.adobe.com/go/getflash">
+						Встановіть Flash Player.
+					</a>
+				<!--[if !IE]>-->
+
+				</object>
+				<!--<![endif]-->
+			</object>
+		</div>
+</div>
+<div id="homerLeft" onMouseOver="run(showLeft);">
+<div id="flashContent">
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="51" height="65" id="homerrLeft" align="middle">
+				<param name="movie" value="homerLeft.swf" />
+				<param name="quality" value="high" />
+
+				<param name="bgcolor" value="#ffffff" />
+				<param name="play" value="true" />
+				<param name="loop" value="true" />
+				<param name="wmode" value="transparent" />
+				<param name="scale" value="showall" />
+				<param name="menu" value="true" />
+				<param name="devicefont" value="false" />
+				<param name="salign" value="" />
+				<param name="allowScriptAccess" value="sameDomain" />
+
+				<!--[if !IE]>-->
+				<object type="application/x-shockwave-flash" data="homerLeft.swf" width="65" height="51">
+					<param name="movie" value="homerLeft.swf" />
+					<param name="quality" value="high" />
+					<param name="bgcolor" value="#ffffff" />
+					<param name="play" value="true" />
+					<param name="loop" value="true" />
+					<param name="wmode" value="transparent" />
+					<param name="scale" value="showall" />
+
+					<param name="menu" value="true" />
+					<param name="devicefont" value="false" />
+					<param name="salign" value="" />
+					<param name="allowScriptAccess" value="sameDomain" />
+				<!--<![endif]-->
+					<a href="http://www.adobe.com/go/getflash">
+						Встановіть Flash Player.
+					</a>
+				<!--[if !IE]>-->
+
+				</object>
+				<!--<![endif]-->
+			</object>
+		</div>
+</div>
+<div id="homerRight" onMouseOver="run(showRight);">
+<div id="flashContent">
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="51" height="65" id="homerrRight" align="middle">
+				<param name="movie" value="homerRight.swf" />
+				<param name="quality" value="high" />
+
+				<param name="bgcolor" value="#ffffff" />
+				<param name="play" value="true" />
+				<param name="loop" value="true" />
+				<param name="wmode" value="transparent" />
+				<param name="scale" value="showall" />
+				<param name="menu" value="true" />
+				<param name="devicefont" value="false" />
+				<param name="salign" value="" />
+				<param name="allowScriptAccess" value="sameDomain" />
+
+				<!--[if !IE]>-->
+				<object type="application/x-shockwave-flash" data="homerRight.swf" width="65" height="51">
+					<param name="movie" value="homerRight.swf" />
+					<param name="quality" value="high" />
+					<param name="bgcolor" value="#ffffff" />
+					<param name="play" value="true" />
+					<param name="loop" value="true" />
+					<param name="wmode" value="transparent" />
+					<param name="scale" value="showall" />
+
+					<param name="menu" value="true" />
+					<param name="devicefont" value="false" />
+					<param name="salign" value="" />
+					<param name="allowScriptAccess" value="sameDomain" />
+				<!--<![endif]-->
+					<a href="http://www.adobe.com/go/getflash">
+						Встановіть Flash Player.
+					</a>
+				<!--[if !IE]>-->
+
+				</object>
+				<!--<![endif]-->
+			</object>
+		</div>
+</div>
+<div id="homerBottom" onMouseOver="run(showBottom);">
+<div id="flashContent">
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="51" height="65" id="homerrBottom" align="middle">
+				<param name="movie" value="homerBottom.swf" />
+				<param name="quality" value="high" />
+
+				<param name="bgcolor" value="#ffffff" />
+				<param name="play" value="true" />
+				<param name="loop" value="true" />
+				<param name="wmode" value="transparent" />
+				<param name="scale" value="showall" />
+				<param name="menu" value="true" />
+				<param name="devicefont" value="false" />
+				<param name="salign" value="" />
+				<param name="allowScriptAccess" value="sameDomain" />
+
+				<!--[if !IE]>-->
+				<object type="application/x-shockwave-flash" data="homerBottom.swf" width="51" height="65">
+					<param name="movie" value="homerBottom.swf" />
+					<param name="quality" value="high" />
+					<param name="bgcolor" value="#ffffff" />
+					<param name="play" value="true" />
+					<param name="loop" value="true" />
+					<param name="wmode" value="transparent" />
+					<param name="scale" value="showall" />
+
+					<param name="menu" value="true" />
+					<param name="devicefont" value="false" />
+					<param name="salign" value="" />
+					<param name="allowScriptAccess" value="sameDomain" />
+				<!--<![endif]-->
+					<a href="http://www.adobe.com/go/getflash">
+						Встановіть Flash Player.
+					</a>
+				<!--[if !IE]>-->
+
+				</object>
+				<!--<![endif]-->
+			</object>
+		</div>
+</div>
+</body>
+</html>

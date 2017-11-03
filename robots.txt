@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /data/
+Disallow: /lang/
+Disallow: /trash/add_post.php
+Disallow: /page/%D0%91%D0%BE%D1%80%D0%B3%D0%B8
+Disallow: /page/What_to_write

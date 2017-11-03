@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Страница, посвященная знаку украинской гривны &#8372. История знака гривны, как набрать знак гривны, коды знака, где уже используется.">
+<meta name="keywords" content="гривня, валюта, знак гривні, символ гривні, знак гривны, символ гривны, hryvnia sign, hryvnia symbol, uah, грн, грвн, гр, як набрати, де використовується, національний банк, Україна, гривні, гроші">
+<title>Знак гривны / Знак гривні / Hryvnia sign</title>
+<link href='http://fonts.googleapis.com/css?family=PT+Serif&subset=cyrillic,latin&v1' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="../favicon.ico">
+<script>
+function read(type){
+param=document.getElementById(type);
+if(param.style.display == "none") param.style.display = "block";
+else param.style.display = "none"
+}
+</script>
+<script>
+var TIME = 24*60*60*1000; //1 день
+
+function getCookie(c_name)
+{
+var i,x,y,ARRcookies=document.cookie.split(";");
+for (i=0;i<ARRcookies.length;i++)
+{
+x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+x=x.replace(/^\s+|\s+$/g,"");
+if (x==c_name)
+{
+return unescape(y);
+}
+}
+}
+
+function setcookie (name, value) {
+var time = new Date();
+time.setTime(Date.parse(time) + TIME);
+document.cookie = name + '=' + value + '; expires=' + time;
+}
+
+function change() {
+document.getElementById('turn-symbol-to-img').innerHTML = "<center><div class='imgsign' title='Знак гривны'></div></center>";
+setcookie('bad', 'true');}
+
+function chk() {
+var st = getCookie('bad');
+if (st) change();
+}
+</script>
+<link rel="stylesheet" type="text/css" href="../style.css"/>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+  {lang: 'uk'}
+</script>
+</head>
+<body onload="chk();">
+<h1 style="padding-top:0;">У украинской гривны есть свой знак:</h1>
+<div id="turn-symbol-to-img">
+	<span class="sign">&#8372;</span><br>
+	<span class="nosign"><a href="#" class="dotted" title="Нажмите, если вы не видите знак гривны выше" onclick="change();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; — у вас что-то такое вместо знака?</a></span>
+</div>
+
+<div class="text">
+	<p>Существует он еще с 2004 года, когда Нацбанк утвердил его как официальный знак украинской гривны, но несмотря на это, он до сих пор не получил широкого распространения — все и дальше используют обычное «грн.» Даже <a href="../rub-sign.gif">неофициальный знак русского рубля</a>, который пропагандируется несколькими энтузиастами с 2007 года, является более распространенным.</p>
+	<p>В том, что о существовании знака гривны большинство даже не догадывается, можно винить власть, которая ничего не делает для его распространения. А можно просто самому помогать распространять этот знак, везде используя его вместо сокращения «грн.» Неважно, вы продавец на рынке или владелец онлайн-магазина — знак гривны легко как написать от руки, так и использовать на веб-странице.</p>
+</div>
+
+<h1 id="howtotype">Как набрать знак гривны:</h1>
+<div class="text">
+	<h2>В Windows Vista, 7 или 8:</h2>
+	<p class="more">Нужно выбрать раскладку <em>Украинский (расширенный)</em>&nbsp; и нажать <code class="button">Shift</code> + <code class="button">~</code></p>
+	<h2>В Windows XP:</h2>
+	<ol class="more">
+		<li><a href="../ukr_unicode_winxp.zip">Скачайте украинскую раскладку клавиатуры с символами Unicode</a></li>
+		<li>Разархивируйте</li>
+		<li>Запустите файл <em>setup.exe</em> (нужно иметь права администратора)</li>
+		<li>В настройках языковой панели выберите раскладку <em>Ukrainian Unicode</em></li>
+		<li>Теперь вы можете набирать знак гривны комбинацией клавиш <code class="button"><nobr>Правый Alt</nobr></code> + <code class="button">Shift</code> + <code class="button">3</code> (или <code class="button">Ctrl</code> + <code class="button">Alt</code> + <code class="button">Shift</code> + <code class="button">3</code>)</li>
+	</ol>
+	<h2>В Mac OS X 10.10 Yosemite:</h2>
+	<p class="more"> Набирать знак гривны можно комбинацией клавиш <nobr><code class="button">Alt (Option)</code> + <code class="button">Shift</code> + <code class="button">Ф</code></nobr>
+        </ol>
+    <h2>В Mac OS X версий ниже, чем 10.10:</h2>
+	<ol class="more">
+		<li><a href="../ukr_unicode_macos.zip">Скачайте украинскую раскладку клавиатуры с символами Unicode</a></li>
+		<li>Разархивируйте</li>
+		<li>Файлы <em>Ukrainian Unicode.keylayout</em>&nbsp; и <em>Ukrainian Unicode.icns</em>&nbsp; скопируйте в <em>/Library/Keyboard Layout</em>&nbsp; (для всех пользователей, нужны права администратора) или в <em>~/Library/Keyboard Layouts</em>&nbsp; (только для текущего пользователя)</li>
+		<li>Перезавантажте комп'ютер (або зробіть Log out, Log in)</li>
+		<li>Зайдите в <em>System Preferences &rarr; International &rarr; Input Menu</em>&nbsp; и выберите <em>Ukrainian Unicode</em></li>
+		<li>Теперь вы можете набирать знак гривны комбинацией клавиш <code class="button"><nobr>Alt (Option)</nobr></code> + <code class="button">Shift</code> + <code class="button">3</code></li>
+	</ol>
+	<h2>В iOS:</h2>
+	<p class="more">Нужно открыть <em>Настройки &rarr; Основные &rarr; Язык и текст &rarr; Регион</em>&nbsp; и выбрать там <em>Україна</em>. Теперь вы можете набирать знак гривны, открыв клавиатуру со специальными символами кнопкой <code class="button">.?123</code> и нажав там <code class="button">&#8372;</code>.</p>
+</div>
+
+<h1 id="codes">Коды знака гривны:</h1>
+<div class="text">
+	HTML (десятичная система): <code>&amp;#8372;</code><br>
+	HTML (шестнадцатеричная система): <code>&amp;#x20b4;</code><br>
+	UTF-8 (шестнадцатеричная): <code>0xE2 0x82 0xB4 (e282b4)</code><br>
+	UTF-8 (двоичная): <code>11100010:10000010:10110100</code><br>
+	UTF-16 (шестнадцатеричная): <code>0x20B4 (20b4)</code><br>
+	UTF-16 (десятичная): <code>8 372</code><br>
+	UTF-32 (шестнадцатеричная): <code>0x000020B4 (20b4)</code><br>
+	UTF-32 (десятичная): <code>8 372</code><br>
+	Для использования в C/C++/Java: <code>"\u20B4"</code><br>
+	Для использования в Python: <code>u"\u20B4"</code><br>
+</div>
+
+<h1 id="graphic">Графический файл со знаком гривны:</h1>
+<div class="text">
+	<p>Вы можете скачать графический файл со знаком гривны в четырех вариантах (Regular, Italic, Bold, Bold Italic). Файл доступен в следующих форматах:</p>
+	<ul>
+		<li><a href="../uahsign.svg">svg, 2.62 кБ</a></li>
+		<li><a href="../uahsign.eps">eps, 597 кБ</a></li>
+		<li><a href="../uahsign.png">png, 13.8 кБ, 513×585 пикселей</a></li>
+	</ul>
+	<div align="center"><img src="../uahsign-preview.png" alt="Знак гривны" width="100" height="114"/></div>
+</div>
+
+<div class="text" align="center">
+	<br>
+	<br>
+	Более полную информацию о знаке гривны можно найти на <a href="../">украиноязычной версии страницы</a>.
+</div>
+
+<div id="langs">
+	<a title="Українська (украинский)" class="uk" href="../">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	<a title="English (английский)" class="en" href="../en">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+</div>
+<div id="share">
+	<a title="Поделиться в Twitter" class="twitter" href="http://twitter.com/intent/tweet?original_referer=&source=tweetbutton&text=%d0%9e+%d0%b7%d0%bd%d0%b0%d0%ba%d0%b5+%d1%83%d0%ba%d1%80%d0%b0%d0%b8%d0%bd%d1%81%d0%ba%d0%be%d0%b9+%d0%b3%d1%80%d0%b8%d0%b2%d0%bd%d1%8b&url=http%3A%2F%2Fpoohitan.com%2Fuah%2Fru&via=poohitan" target="_blank" onClick="popupWin = window.open(this.href, 'twitter', 'location,width=600,height=300,top=250,left=400'); popupWin.focus(); return false;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	<a title="Поделиться в Facebook" class="facebook" href="http://www.facebook.com/sharer/sharer.php?u=http://poohitan.com/uah/" target="_blank" onClick="popupWin = window.open(this.href, 'facebook', 'location,width=600,height=300,top=250,left=400'); popupWin.focus(); return false;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	<a title="Поделиться во ВКонтакте" class="vk" href="http://vk.com/share.php?url=http://poohitan.com/uah/ru" target="_blank" onClick="popupWin = window.open(this.href, 'vk', 'location,width=600,height=300,top=250,left=400'); popupWin.focus(); return false;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	<br>
+	<div class="google"><g:plusone size="small"></g:plusone></div>
+</div>
+</html>
+</body>

@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="lightbox.css">
+<script type="text/javascript" src="lightbox.js"></script>
+<title>Торт в культурі / Торт</title>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header"><h1>Торт</h1></div>
+	<div id="menu">
+		<h2>Меню</h2>
+		<ul>
+			<li><a href="index.html">Головна</a></li>
+			<li><a href="cooking.html">Приготування тортів</a></li>
+			<li><a href="culture.html">Торт в культурі</a></li>
+			<li><a href="famous.html">Відомі торти</a></li>
+		</ul>
+			<hr>
+		<ul>
+			<li><a href="author.html" target="_blank" onClick="popupWin = window.open(this.href, 'contacts', 'location,width=450,height=400,top=100%,left=100%'); popupWin.focus(); return false;">Автор сайту</a></li>
+		</ul>
+	</div>
+	<div id="content">
+		<h2>Торт в культурі</h2>
+		<p>Торт є традиційною святковою стравою на весіллях та днях народження. На весілля торт прикрашають фігурками наречених, розташовуючи іх на верхівці торта. На день народження іменинний торт прикрашають свічками у кількості, що дорівнює віку іменинника, або спеціальними свічками з цифровим зображенням його віку.</p>
+		<a href="bill_gates.gif" rel="lightbox"><img src="bill_gates.gif" alt="Bill Gates" align="right" width="50%"></a><p>Торти часто використовують в якості метальної зброї для демонстрації громадської недовіри до знаних людей. Традицію закидати відомих осіб тортами започаткував бельгієць Ноель Годен — лідер руху «Міжнародні тістечкові бригади», від активістів якого постраждали такі особи, як Білл Гейтс, Мішель Камдесю, Жан Люк Годар та інші.</p>
+	</div>
+	<div id="footer">
+		<script type="text/javascript">
+			var d=document
+			function showTime(){
+				var tmN=new Date()
+				var dH=''+tmN.getHours();dH=dH.length<2?'0'+dH:dH
+				var dM=''+tmN.getMinutes();dM=dM.length<2?'0'+dM:dM
+				var dS=''+tmN.getSeconds();dS=dS.length<2?'0'+dS:dS
+				var tmp=dH+':'+dM+':'+dS
+				d.getElementById('time').innerHTML=tmp
+				var t=setTimeout('showTime()',1000)
+			}
+		</script>
+		<img class="icon" src="clock.png" title="Поточний час" alt="Поточний час"/> <span id="time"></span>
+		<script type="text/javascript">showTime()</script>
+		<span style="padding-left:30px;"><a href="#" onClick="window.print()"><img align="right" class="icon" src="print.png" title="Друкувати сторінку" alt="Друкувати сторінку"/></a></span>
+	</div>
+</div>
+</body>
+</html>

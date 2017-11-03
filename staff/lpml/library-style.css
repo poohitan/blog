@@ -1,0 +1,41 @@
+#book-catalog .catalog {
+	margin-left:-25px;
+	width:647px;
+}
+#book-catalog .header {background:#3e3e3e; color:#ffffff;}
+td {border-right:1px solid #b5b5b5; border-bottom:1px solid #b5b5b5; padding:5px;}
+td.title {padding:5px 5px 5px 25px;}
+td.amount {padding:5px 25px 5px 5px;}
+.header td {border:none;}
+.header a {color:#ffffff; text-decoration:none;}
+.header a:hover {color:#ffffff; text-decoration:none;}
+#pages a {
+	text-decoration:none;
+	margin:0 1px 0 1px;
+	padding:2px 7px;
+	background:#ffffff;
+	color:#252525;
+	border:1px solid #067acf;
+}
+#pages a:hover {
+	background:#f3f3f3;
+	border:1px solid #0865b3;
+}
+#pages a#current {background:#e0e0e0;}
+#pages ul {margin:10px 0; padding:0;}
+#pages li {
+	display:inline;
+	list-style:none;
+}
+a.amount {
+	padding:0px 5px; 
+	background:#ffffff;
+	color:#252525;
+	border:1px solid #067acf;
+	text-decoration:none;
+}
+a.amount:hover {
+	background:#f3f3f3;
+	border:1px solid #0865b3;
+	text-decoration:none;
+}

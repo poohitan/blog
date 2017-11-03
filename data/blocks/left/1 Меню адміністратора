@@ -1,0 +1,9 @@
+<div>
+<h3>Меню адміністратора</h3>
+<a href="<?php e($_s['base_url']);?>/?action=add_post">Додати запис</a><br/>
+<a href="<?php e($_s['base_url']);?>/trash/add_post.php">Додати запис у смітник</a><br/>
+<a href="<?php e($_s['base_url']);?>/?action=add_page">Додати сторінку</a><br/>
+<a href="<?php e($_s['base_url']);?>/?action=config">Конфігурація сайту</a><br/>
+<a href="<?php e($_s['base_url']);?>/?pg=m.admin">Налаштування</a><br/>
+<a href="<?php e($_s['base_url']);?>/?action=logout">Вийти</a>
+</div>

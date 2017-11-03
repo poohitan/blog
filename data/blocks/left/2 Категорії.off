@@ -1,0 +1,4 @@
+<div>
+<h3>Категорії</h3>
+<?php mscat_show('<a href="%link%" class="menu">%name%</a>'); ?>
+</div>

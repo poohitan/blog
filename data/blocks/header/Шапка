@@ -1,0 +1,7 @@
+<div id="menu" align="center">
+<div class="item"><a href="<?php e($_s['base_url']);?>" title="Головна">Головна</a></div>
+<div class="item"><a href="<?php e($_s['base_url']);?>/archive/" title="Архів">Архів</a></div>
+<div class="item"><a href="<?php e($_s['base_url']);?>/about/" title="Про">Про</a></div>
+<div class="item"><a href="<?php e($_s['base_url']);?>/trash/" title="Смітник"><div id="trashbin">&nbsp;</div></a></div>
+</div>
+<hr/>
