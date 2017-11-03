@@ -1,7 +1,0 @@
-AuthType Basic
-AuthName "/www/poohitan.com/webstat"
-AuthUserFile /home/poohitan/data/etc/174072938.passwd
-DirectoryIndex index.html
-<Limit GET POST>
-	require valid-user
-</Limit>
